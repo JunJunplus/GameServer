@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by zhengtu (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<ScenesInfo>
+	<!--id:服务器编号,country:国家编号,mapID:地图编号-->
+	<server id="21">
+		<country id="2">
+			<map mapID="101"/>
+		</country>
+		<country id="3">
+			<map mapID="101"/>
+		</country>
+	</server>
+	<server id="22">
+		<country id="2">
+			<map mapID="100"/>
+			<map mapID="102"/>
+			<map mapID="103"/>
+			<map mapID="104"/>
+			<map mapID="105"/>
+			<map mapID="106"/>
+			<map mapID="107"/>
+			<map mapID="108"/>
+			<map mapID="109"/>
+			<map mapID="110"/>
+			<map mapID="111"/>
+			<map mapID="116"/>
+			<map mapID="117"/>
+			<map mapID="118"/>
+			<map mapID="120"/>
+			<map mapID="121"/>
+			<map mapID="122"/>
+			<map mapID="123"/>
+			<map mapID="124"/>
+			<map mapID="125"/>
+			<map mapID="126"/>
+		</country>
+		<country id="3">
+			<map mapID="100"/>
+			<map mapID="102"/>
+			<map mapID="103"/>
+			<map mapID="104"/>
+			<map mapID="105"/>
+			<map mapID="106"/>
+			<map mapID="107"/>
+			<map mapID="108"/>
+			<map mapID="109"/>
+			<map mapID="110"/>
+			<map mapID="111"/>
+			<map mapID="116"/>
+			<map mapID="117"/>
+			<map mapID="118"/>
+			<map mapID="120"/>
+			<map mapID="121"/>
+			<map mapID="122"/>
+			<map mapID="123"/>
+			<map mapID="124"/>
+			<map mapID="125"/>
+			<map mapID="126"/>
+		</country>
+	</server>
+	<!--id:国家编号,name:国家名称,mapID:该国家主城(新手出生等);国家名称不能有特殊字符"·"-->
+	<countryinfo>
+		<country id="2" name="舜" mapID="101"/>
+		<country id="3" name="尧" mapID="101"/>
+	</countryinfo>
+	<!--mapID:地图编号,name:地图名称,fileName:地图文件名,backto:死亡后重生地图编号;地图名称不能有特殊字符"·",文件名称不能有特殊字符"."-->
+	<!--special特殊功能定义(用二进制表示),包括:不可骑马(1)...-->
+	<mapinfo>
+		<map mapID="100" name="冀州" fileName="jizhou-main" backtocity="100"/>
+		<map mapID="101" name="青州" fileName="qingzhou-main" backtocity="101"/>
+		<map mapID="102" name="徐州" fileName="xuzhou-main" backtocity="102"/>
+		<map mapID="103" name="乱葬窟一层" fileName="luanzangku1" backtocity="102"/>
+		<map mapID="104" name="乱葬窟二层左" fileName="luanzangku2A" backto="103" backtocity="102" function="1"/>
+		<map mapID="105" name="乱葬窟二层右" fileName="luanzangku2B" backto="103" backtocity="102" function="1"/>
+		<map mapID="106" name="乱葬窟三层左" fileName="luanzangku3A" backto="103" backtocity="102" function="1"/>
+		<map mapID="107" name="乱葬窟三层右" fileName="luanzangku3B" backto="103" backtocity="102" function="1"/>
+		<map mapID="108" name="乱葬窟四层左" fileName="luanzangku4A" backto="103" backtocity="102" function="1"/>
+		<map mapID="109" name="乱葬窟四层中" fileName="luanzangku4B" backto="103" backtocity="102" function="1"/>
+		<map mapID="110" name="乱葬窟四层右" fileName="luanzangku4C" backto="103" backtocity="102" function="1"/>
+		<map mapID="111" name="乱葬窟五层" fileName="luanzangku5" backto="103" backtocity="102" function="1"/>
+		<map mapID="116" name="试练一室" fileName="shilian1" backto="101" backtocity="101" function="1"/>
+		<map mapID="117" name="试练二室" fileName="shilian2" backto="101" backtocity="101" function="1"/>
+		<map mapID="118" name="山寨一层" fileName="shanzhai1" backto="100" backtocity="100" function="1"/>
+		<map mapID="119" name="山寨二层" fileName="shanzhai2" backto="100" backtocity="100" function="1"/>
+		<map mapID="120" name="山寨三层" fileName="shanzhai3" backto="100" backtocity="100" function="1"/>
+		<map mapID="121" name="山寨四层" fileName="shanzhai4" backto="100" backtocity="100" function="1"/>
+		<map mapID="122" name="千江村" fileName="qianjiangcun-main" backto="" backtocity="122" function="1"/>
+		<map mapID="123" name="小道" fileName="xiaolu" backto="" backtocity="101" function="1"/>
+		<map mapID="124" name="沼泽地" fileName="zhaoze" backto="" backtocity="122" function="1"/>
+		<map mapID="125" name="蛟龙洞一层" fileName="jiaolongdong1" backto="124" backtocity="122" function="1"/>
+		<map mapID="126" name="蛟龙洞二层" fileName="jiaolongdong2" backto="124" backtocity="122" function="1"/>
+	</mapinfo>
+</ScenesInfo>

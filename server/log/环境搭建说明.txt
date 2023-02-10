@@ -1,0 +1,33 @@
+RedHatlinux编译环境教程：
+
+1.安装系统要求：安装所有开发包、中文语言包、mysql数据库。
+
+2.系说说明: redhat4 x64bit 、cent OS4.0 - 4.4
+
+系统下载地址：ed2k://|file|[?o￠??????????o§Linux.AS???].TLF-SOFT-Redhat.Enterprise.Linux.AS.V4.0.UPDATE.7.X86_64.DVD-HOTiSO.iso|2668521472|b7494c41f3be8d853ee482f77394073f|h=R5CB2S6WVHBA3NCQFMFPYQINSUDUOCSC|/
+
+GCC版本要求GCC 3.4.x 查看GCC版本 #gcc --version 、 查看g++位置 #which g++（一般是在 /usr/bin 目录下）
+
+查看系统版本 #cat /etc/redhat-release
+
+3.修改系统的默认语言  
+
+找到 etc目录下sysconfig目录下i18n 文件LANG="zh_CN.UTF-8" 修改为 LANG="zh_CN.GB2312"  
+
+4.安装log4cxx-0.9.7库
+-----------------------------------------
+# cd /usr/local/src //进入上传文件目录
+
+# tar xzvf log4cxx-0.9.7.tar.gz //解压lo4cxx文件
+
+# cd log4cxx-0.9.7 //进入log4cxx文件夹
+
+# ./autogen.sh //生成配置脚本
+
+# ./configure  //配置编译环境。默认的安装目录是/usr/local
+
+# make  //生成安装文件
+
+# make install 
+-------------------------------------------------------
+

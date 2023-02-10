@@ -1,0 +1,4638 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<!--NPC功能描述,比如在那里可以打造,那里可以买卖制定的物品-->
+<!--对于玩家来说.action 买=1,卖=2,修=4,打造(合成）=8,升级=16,如果ID或者kind是0表示所有可以有此动作的物品-->
+<!--level表示物品所需级数。50表示小于等于50-->
+<NpcTrade>
+	<npc id="247">
+		<menu>
+function MainDialog()
+AddTalk("欢迎来到XX国，很高兴你能成为这个国家的国民，希望在这个国家里，您能生活得幸福，游玩得快乐。请问有什么需要帮忙的吗？呃，忘了自我介绍了,我是这里的新手村辅导员。即使现在你不需要我的帮忙，我还是欢迎你再次光临，谢谢！")
+AddDialogItem("故事背景","Dialog1")
+AddDialogItem("游戏的操作方式","Dialog2")
+AddDialogItem("游戏的世界地图/各国家的地理位置","Dialog3")
+AddDialogItem("游戏中8大职业","Dialog4")
+AddDialogItem("游戏的各个功能体系","Dialog5")
+AddCloseItem("离开")
+end
+
+function Dialog1()
+AddTalk("故事背景:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+
+
+function Dialog2()
+AddTalk("操作方式:鼠标左键实现人物的行走，点击鼠标左键实现人物跑步，选择目标点击左键或者右键就可以实现普通攻击。聊天的实现可以按下enter切换为信息输入状态，再按下enter信息发送出去；如果在输入状态下按下esc放弃本次输入并且回到非输入状态。")
+AddDialogItem("离开","MainDialog")
+end
+
+function Dialog3()
+AddTalk("游戏的世界地图，各国家的地理位：XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+
+function Dialog4()
+AddTalk("8大职业：游戏中有8大职业，即以物理攻击为主的有：侠客、侠女、箭侠、箭灵；以法术攻击为主的有：天师、美女、法师、仙女。")
+AddDialogItem("离开","MainDialog")
+end
+
+function Dialog5()
+AddTalk("游戏的各个功能体系:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+
+
+AddDialog("MainDialog")
+
+
+
+</menu>
+	</npc>
+	<npc name="新手村辅导员" id="248">
+		<menu>
+function MainDialog()
+AddTalk("欢迎来到XX国，很高兴你能成为这个国家的国民，希望在这个国家里，您能生活得幸福，游玩得快乐。请问有什么需要帮忙的吗？呃，忘了自我介绍了,我是这里的新手村辅导员。即使现在你不需要我的帮忙，我还是欢迎你再次光临，谢谢！")
+AddDialogItem("故事背景","Dialog1")
+AddDialogItem("游戏的操作方式","Dialog2")
+AddDialogItem("游戏的世界地图/各国家的地理位置","Dialog3")
+AddDialogItem("游戏中8大职业","Dialog4")
+AddDialogItem("游戏的各个功能体系","Dialog5")
+AddCloseItem("离开")
+end
+
+function Dialog1()
+AddTalk("故事背景:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+
+
+function Dialog2()
+AddTalk("操作方式:鼠标左键实现人物的行走，点击鼠标左键实现人物跑步，选择目标点击左键或者右键就可以实现普通攻击。聊天的实现可以按下enter切换为信息输入状态，再按下enter信息发送出去；如果在输入状态下按下esc放弃本次输入并且回到非输入状态。")
+AddDialogItem("离开","MainDialog")
+end
+
+function Dialog3()
+AddTalk("游戏的世界地图，各国家的地理位：XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+
+function Dialog4()
+AddTalk("8大职业：游戏中有8大职业，即以物理攻击为主的有：侠客、侠女、箭侠、箭灵；以法术攻击为主的有：天师、美女、法师、仙女。")
+AddDialogItem("离开","MainDialog")
+end
+
+function Dialog5()
+AddTalk("游戏的各个功能体系:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+
+
+AddDialog("MainDialog")
+
+
+
+</menu>
+	</npc>
+	<npc name="新手村辅导员" id="249">
+		<menu>
+function MainDialog()
+AddTalk("欢迎来到XX国，很高兴你能成为这个国家的国民，希望在这个国家里，您能生活得幸福，游玩得快乐。请问有什么需要帮忙的吗？呃，忘了自我介绍了,我是这里的新手村辅导员。即使现在你不需要我的帮忙，我还是欢迎你再次光临，谢谢！")
+AddDialogItem("故事背景","Dialog1")
+AddDialogItem("游戏的操作方式","Dialog2")
+AddDialogItem("游戏的世界地图/各国家的地理位置","Dialog3")
+AddDialogItem("游戏中8大职业","Dialog4")
+AddDialogItem("游戏的各个功能体系","Dialog5")
+AddCloseItem("离开")
+end
+
+function Dialog1()
+AddTalk("故事背景:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+
+
+function Dialog2()
+AddTalk("操作方式:鼠标左键实现人物的行走，点击鼠标左键实现人物跑步，选择目标点击左键或者右键就可以实现普通攻击。聊天的实现可以按下enter切换为信息输入状态，再按下enter信息发送出去；如果在输入状态下按下esc放弃本次输入并且回到非输入状态。")
+AddDialogItem("离开","MainDialog")
+end
+
+function Dialog3()
+AddTalk("游戏的世界地图，各国家的地理位：XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+
+function Dialog4()
+AddTalk("8大职业：游戏中有8大职业，即以物理攻击为主的有：侠客、侠女、箭侠、箭灵；以法术攻击为主的有：天师、美女、法师、仙女。")
+AddDialogItem("离开","MainDialog")
+end
+
+function Dialog5()
+AddTalk("游戏的各个功能体系:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+
+
+AddDialog("MainDialog")
+
+
+
+</menu>
+	</npc>
+	<npc name="新手村辅导员" id="250">
+		<menu>
+function MainDialog()
+AddTalk("欢迎来到XX国，很高兴你能成为这个国家的国民，希望在这个国家里，您能生活得幸福，游玩得快乐。请问有什么需要帮忙的吗？呃，忘了自我介绍了,我是这里的新手村辅导员。即使现在你不需要我的帮忙，我还是欢迎你再次光临，谢谢！")
+AddDialogItem("故事背景","Dialog1")
+AddDialogItem("游戏的操作方式","Dialog2")
+AddDialogItem("游戏的世界地图/各国家的地理位置","Dialog3")
+AddDialogItem("游戏中8大职业","Dialog4")
+AddDialogItem("游戏的各个功能体系","Dialog5")
+AddCloseItem("离开")
+end
+
+function Dialog1()
+AddTalk("故事背景:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+
+
+function Dialog2()
+AddTalk("操作方式:鼠标左键实现人物的行走，点击鼠标左键实现人物跑步，选择目标点击左键或者右键就可以实现普通攻击。聊天的实现可以按下enter切换为信息输入状态，再按下enter信息发送出去；如果在输入状态下按下esc放弃本次输入并且回到非输入状态。")
+AddDialogItem("离开","MainDialog")
+end
+
+function Dialog3()
+AddTalk("游戏的世界地图，各国家的地理位：XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+
+function Dialog4()
+AddTalk("8大职业：游戏中有8大职业，即以物理攻击为主的有：侠客、侠女、箭侠、箭灵；以法术攻击为主的有：天师、美女、法师、仙女。")
+AddDialogItem("离开","MainDialog")
+end
+
+function Dialog5()
+AddTalk("游戏的各个功能体系:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+
+
+AddDialog("MainDialog")
+
+
+
+</menu>
+	</npc>
+	<npc name="士兵" id="235">
+		<menu>
+function MainDialog()
+AddTalk("保卫家园是我的职责，我在值勤，如果你有什么咨询的话，去找新手村的辅导员。她可以解答你的任何疑惑。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+</menu>
+	</npc>
+	<npc name="士兵" id="236">
+		<menu>function MainDialog()
+AddTalk("保卫家园是我的职责，我在值勤，如果你有什么咨询的话，去找新手村的辅导员。她可以解答你的任何疑惑。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+</menu>
+	</npc>
+	<npc name="士兵" id="237">
+		<menu>
+function MainDialog()
+AddTalk("保卫家园是我的职责，我在值勤，如果你有什么咨询的话，去找新手村的辅导员。她可以解答你的任何疑惑。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+</menu>
+	</npc>
+	<npc name="士兵" id="238">
+		<menu>
+function MainDialog()
+AddTalk("冰天雪地下的我依然勇猛。我现在当班，如果你有疑惑的话，去好新手村的辅导员，她可以回答你的任何问题。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+
+
+
+</menu>
+	</npc>
+	<npc name="士兵" id="239">
+		<menu>
+function MainDialog()
+AddTalk("冰天雪地下的我依然勇猛。我现在当班，如果你有疑惑的话，去好新手村的辅导员，她可以回答你的任何问题。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+
+
+
+
+</menu>
+	</npc>
+	<npc name="士兵" id="240">
+		<menu>
+function MainDialog()
+AddTalk("冰天雪地下的我依然勇猛。我现在当班，如果你有疑惑的话，去好新手村的辅导员，她可以回答你的任何问题。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+
+
+</menu>
+	</npc>
+	<npc name="士兵" id="244">
+		<menu>
+function MainDialog()
+AddTalk("请注意您的安全，不要远离自己的国家。我在值勤，如果你需要帮忙的话，新手村的辅导员她会全力帮助你的。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+
+
+</menu>
+	</npc>
+	<npc name="士兵" id="245">
+		<menu>function MainDialog()
+AddTalk("请注意您的安全，不要远离自己的国家。我在值勤，如果你需要帮忙的话，新手村的辅导员她会全力帮助你的。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+
+
+	</menu>
+	</npc>
+	<npc name="士兵" id="246">
+		<menu>
+function MainDialog()
+AddTalk("请注意您的安全，不要远离自己的国家。我在值勤，如果你需要帮忙的话，新手村的辅导员她会全力帮助你的。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+
+
+</menu>
+	</npc>
+	<npc name="士兵" id="241">
+		<menu>
+function MainDialog()
+AddTalk("请不要烦我，我在当班，需要集中精神，有事情找新手村辅导员吧")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+
+
+</menu>
+	</npc>
+	<npc name="士兵" id="242">
+		<menu>
+function MainDialog()
+AddTalk("请不要烦我，我在当班，需要集中精神，有事情找新手村辅导员吧")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+
+</menu>
+	</npc>
+	<npc name="士兵" id="243">
+		<menu>
+function MainDialog()
+AddTalk("请不要烦我，我在当班，需要集中精神，有事情找新手村辅导员吧")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+</menu>
+	</npc>
+	<npc name="薛一刀" id="163">
+		<menu>
+function MainDialog()
+AddTalk("欢迎！我是武器商薛一刀。")
+AddTradeRepairItem("买卖/修理物品","id[168,176];type[3]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","需要什么武器？当然你也可以卖给我一些东西。我这里也修理物品的。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+</menu>
+		<item id="168" kind="" action="1"/>
+		<item id="176" kind="" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="剑奴" id="167">
+		<menu>function MainDialog()
+AddTalk("好好好，我就是剑奴啦，这就是我经营的武器店，虽然规模不大，但是呢，这里的武器都很划算也很实用的。")
+AddTradeRepairItem("买卖/修理物品","id[161,162,163,164,165,166,167,169,170,171,172,173,174,175];type[3]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","不知道是买武器呢还是卖东西给本店呢？不过，我都乐意。修理也是我的强项。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+</menu>
+		<item id="161" kind="" action="1"/>
+		<item id="162" kind="" action="1"/>
+		<item id="163" action="1"/>
+		<item id="164" action="1"/>
+		<item id="165" action="1"/>
+		<item id="166" action="1"/>
+		<item id="167" action="1"/>
+		<item id="169" action="1"/>
+		<item id="170" action="1"/>
+		<item id="171" action="1"/>
+		<item id="172" action="1"/>
+		<item id="173" action="1"/>
+		<item id="174" action="1"/>
+		<item id="175" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="武拓" id="164">
+		<menu>
+function MainDialog()
+AddTalk("哦哈哈哈……我是防具商武拓。你们随便看，随便看咯，看中了，就出手吧，别错过机会了。")
+AddTradeRepairItem("买卖/修理物品","id[9,10,19,20,90,100,229,234];type[1,2,10]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","呵呵，不管你是买还是卖，都感谢照顾本店啊！是不是还要想修理什么呢？")
+AddCloseItem("离开")
+end                                                                 
+AddDialog("MainDialog")</menu>
+		<item id="9" kind="" action="1"/>
+		<item id="10" kind="" action="1"/>
+		<item id="19" action="1"/>
+		<item id="20" action="1"/>
+		<item id="90" action="1"/>
+		<item id="100" action="1"/>
+		<item id="223" action="1"/>
+		<item id="234" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="贾放" id="168">
+		<menu>
+function MainDialog()
+AddTalk("欢迎欢迎啊，随便看，这里品种很多，物美价廉，在这里，你会找到合适你的东西的。忘记介绍我自己了，我是防具商贾放。")
+AddTradeRepairItem("买卖/修理物品","id[1,2,3,4,5,6,7,8,11,12,13,14,15,16,17,18,81,82,83,84,85,86,87,88,89,91,92,93,94,95,96,97,98,99,225,226,227,228,230,231,232,233];type[1,2,10]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","在我这里买卖防具都很值得，就让我好好推荐给你吧。物品放我这里修理，你绝对放心好了。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+</menu>
+		<item id="1" kind="" action="1"/>
+		<item id="2" kind="" action="1"/>
+		<item id="3" action="1"/>
+		<item id="4" action="1"/>
+		<item id="5" action="1"/>
+		<item id="6" action="1"/>
+		<item id="7" action="1"/>
+		<item id="8" action="1"/>
+		<item id="11" action="1"/>
+		<item id="12" action="1"/>
+		<item id="13" action="1"/>
+		<item id="14" action="1"/>
+		<item id="15" action="1"/>
+		<item id="16" action="1"/>
+		<item id="17" action="1"/>
+		<item id="18" action="1"/>
+		<item id="81" action="1"/>
+		<item id="82" action="1"/>
+		<item id="83" action="1"/>
+		<item id="84" action="1"/>
+		<item id="85" action="1"/>
+		<item id="86" action="1"/>
+		<item id="87" action="1"/>
+		<item id="88" action="1"/>
+		<item id="89" action="1"/>
+		<item id="91" action="1"/>
+		<item id="92" action="1"/>
+		<item id="93" action="1"/>
+		<item id="94" action="1"/>
+		<item id="95" action="1"/>
+		<item id="96" action="1"/>
+		<item id="97" action="1"/>
+		<item id="98" action="1"/>
+		<item id="99" action="1"/>
+		<item id="225" action="1"/>
+		<item id="226" action="1"/>
+		<item id="227" action="1"/>
+		<item id="228" action="1"/>
+		<item id="230" action="1"/>
+		<item id="231" action="1"/>
+		<item id="232" action="1"/>
+		<item id="233" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="赫名" id="165">
+		<menu>
+function MainDialog()
+AddTalk("哟呵，欢迎欢迎。我是售货员赫名。本店为您服务周到，满意而归。")
+AddTradeRepairItem("买卖/修理物品","id[248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414];type[11,13]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","怎么，不为自己的行囊添加点什么吗？或是出售一些物品？我这里也有修理的服务。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+</menu>
+		<item id="248" kind="" action="1"/>
+		<item id="249" kind="" action="1"/>
+		<item id="250" action="1"/>
+		<item id="251" action="1"/>
+		<item id="252" action="1"/>
+		<item id="253" action="1"/>
+		<item id="254" action="1"/>
+		<item id="255" action="1"/>
+		<item id="256" action="1"/>
+		<item id="257" action="1"/>
+		<item id="258" action="1"/>
+		<item id="259" action="1"/>
+		<item id="260" action="1"/>
+		<item id="261" action="1"/>
+		<item id="262" action="1"/>
+		<item id="263" action="1"/>
+		<item id="264" action="1"/>
+		<item id="278" action="1"/>
+		<item id="279" action="1"/>
+		<item id="280" action="1"/>
+		<item id="281" action="1"/>
+		<item id="282" action="1"/>
+		<item id="283" action="1"/>
+		<item id="284" action="1"/>
+		<item id="285" action="1"/>
+		<item id="286" action="1"/>
+		<item id="287" action="1"/>
+		<item id="288" action="1"/>
+		<item id="290" action="1"/>
+		<item id="291" action="1"/>
+		<item id="292" action="1"/>
+		<item id="293" action="1"/>
+		<item id="294" action="1"/>
+		<item id="368" action="1"/>
+		<item id="369" action="1"/>
+		<item id="370" action="1"/>
+		<item id="371" action="1"/>
+		<item id="372" action="1"/>
+		<item id="373" action="1"/>
+		<item id="374" action="1"/>
+		<item id="375" action="1"/>
+		<item id="376" action="1"/>
+		<item id="377" action="1"/>
+		<item id="378" action="1"/>
+		<item id="379" action="1"/>
+		<item id="380" action="1"/>
+		<item id="381" action="1"/>
+		<item id="382" action="1"/>
+		<item id="383" action="1"/>
+		<item id="384" action="1"/>
+		<item id="398" action="1"/>
+		<item id="399" action="1"/>
+		<item id="400" action="1"/>
+		<item id="401" action="1"/>
+		<item id="402" action="1"/>
+		<item id="403" action="1"/>
+		<item id="404" action="1"/>
+		<item id="405" action="1"/>
+		<item id="406" action="1"/>
+		<item id="407" action="1"/>
+		<item id="408" action="1"/>
+		<item id="409" action="1"/>
+		<item id="410" action="1"/>
+		<item id="411" action="1"/>
+		<item id="412" action="1"/>
+		<item id="413" action="1"/>
+		<item id="414" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="甄田" id="169">
+		<menu>
+function MainDialog()
+AddTalk("欢迎欢迎，一路辛苦了，我是售货员甄田。希望本店舒适的环境让你能够轻松点。")
+AddTradeRepairItem("买卖/修理物品","id[235,236,237,238,239,240,241,242,244,243,245,246,247,265,266,267,268,269,270,271,272,273,274,275,276,277,355,356,357,358,359,360,361,362,363,364,365,366,367,385,386,387,388,389,390,391,392,393,394,395,396,397];type[11,13]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","本店的物品款式新颖又多，一定有合适你的，你放心卖东西给我或是让我修理，保证不会坑你。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+
+</menu>
+		<item id="235" kind="" action="1"/>
+		<item id="236" kind="" action="1"/>
+		<item id="237" action="1"/>
+		<item id="238" action="1"/>
+		<item id="239" action="1"/>
+		<item id="240" action="1"/>
+		<item id="241" action="1"/>
+		<item id="242" action="1"/>
+		<item id="243" action="1"/>
+		<item id="244" action="1"/>
+		<item id="245" action="1"/>
+		<item id="246" action="1"/>
+		<item id="247" action="1"/>
+		<item id="265" action="1"/>
+		<item id="266" action="1"/>
+		<item id="267" action="1"/>
+		<item id="268" action="1"/>
+		<item id="269" action="1"/>
+		<item id="270" action="1"/>
+		<item id="271" action="1"/>
+		<item id="272" action="1"/>
+		<item id="273" action="1"/>
+		<item id="274" action="1"/>
+		<item id="275" action="1"/>
+		<item id="276" action="1"/>
+		<item id="277" action="1"/>
+		<item id="355" action="1"/>
+		<item id="356" action="1"/>
+		<item id="357" action="1"/>
+		<item id="358" action="1"/>
+		<item id="359" action="1"/>
+		<item id="360" action="1"/>
+		<item id="361" action="1"/>
+		<item id="362" action="1"/>
+		<item id="363" action="1"/>
+		<item id="364" action="1"/>
+		<item id="365" action="1"/>
+		<item id="366" action="1"/>
+		<item id="367" action="1"/>
+		<item id="385" action="1"/>
+		<item id="386" action="1"/>
+		<item id="387" action="1"/>
+		<item id="388" action="1"/>
+		<item id="389" action="1"/>
+		<item id="390" action="1"/>
+		<item id="391" action="1"/>
+		<item id="392" action="1"/>
+		<item id="393" action="1"/>
+		<item id="394" action="1"/>
+		<item id="395" action="1"/>
+		<item id="396" action="1"/>
+		<item id="397" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="南宫" id="166">
+		<menu>
+function MainDialog()
+AddTalk("我是首饰商南宫。我喜欢果断的人，所以请那些举棋不定的别来浪费我的时间。")
+AddTradeRepairItem("买卖/修理物品","id[309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,457,458,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,474,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,503,504,518,519,520,21,522,523,524,525,256,527,528,529,530,531,532,533,534];type[12,14,15]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","买卖或是修理什么，定好后告诉我。希望价格没有吓到你，毕竟我这里是高档店。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+</menu>
+		<item id="309" kind="" action="1"/>
+		<item id="310" kind="" action="1"/>
+		<item id="311" action="1"/>
+		<item id="312" action="1"/>
+		<item id="313" action="1"/>
+		<item id="314" action="1"/>
+		<item id="315" action="1"/>
+		<item id="316" action="1"/>
+		<item id="317" action="1"/>
+		<item id="318" action="1"/>
+		<item id="319" action="1"/>
+		<item id="320" action="1"/>
+		<item id="321" action="1"/>
+		<item id="322" action="1"/>
+		<item id="323" action="1"/>
+		<item id="324" action="1"/>
+		<item id="338" action="1"/>
+		<item id="339" action="1"/>
+		<item id="340" action="1"/>
+		<item id="341" action="1"/>
+		<item id="342" action="1"/>
+		<item id="343" action="1"/>
+		<item id="344" action="1"/>
+		<item id="345" action="1"/>
+		<item id="346" action="1"/>
+		<item id="347" action="1"/>
+		<item id="348" action="1"/>
+		<item id="349" action="1"/>
+		<item id="350" action="1"/>
+		<item id="351" action="1"/>
+		<item id="352" action="1"/>
+		<item id="353" action="1"/>
+		<item id="354" action="1"/>
+		<item id="427" action="1"/>
+		<item id="428" action="1"/>
+		<item id="429" action="1"/>
+		<item id="430" action="1"/>
+		<item id="431" action="1"/>
+		<item id="432" action="1"/>
+		<item id="433" action="1"/>
+		<item id="434" action="1"/>
+		<item id="435" action="1"/>
+		<item id="436" action="1"/>
+		<item id="437" action="1"/>
+		<item id="438" action="1"/>
+		<item id="439" action="1"/>
+		<item id="440" action="1"/>
+		<item id="441" action="1"/>
+		<item id="442" action="1"/>
+		<item id="443" action="1"/>
+		<item id="444" action="1"/>
+		<item id="457" action="1"/>
+		<item id="458" action="1"/>
+		<item id="459" action="1"/>
+		<item id="460" action="1"/>
+		<item id="461" action="1"/>
+		<item id="462" action="1"/>
+		<item id="463" action="1"/>
+		<item id="464" action="1"/>
+		<item id="465" action="1"/>
+		<item id="466" action="1"/>
+		<item id="467" action="1"/>
+		<item id="468" action="1"/>
+		<item id="469" action="1"/>
+		<item id="470" action="1"/>
+		<item id="471" action="1"/>
+		<item id="472" action="1"/>
+		<item id="473" action="1"/>
+		<item id="474" action="1"/>
+		<item id="487" action="1"/>
+		<item id="488" action="1"/>
+		<item id="489" action="1"/>
+		<item id="490" action="1"/>
+		<item id="491" action="1"/>
+		<item id="492" action="1"/>
+		<item id="493" action="1"/>
+		<item id="494" action="1"/>
+		<item id="495" action="1"/>
+		<item id="496" action="1"/>
+		<item id="497" action="1"/>
+		<item id="498" action="1"/>
+		<item id="499" action="1"/>
+		<item id="500" action="1"/>
+		<item id="501" action="1"/>
+		<item id="502" action="1"/>
+		<item id="503" action="1"/>
+		<item id="504" action="1"/>
+		<item id="518" action="1"/>
+		<item id="519" action="1"/>
+		<item id="520" action="1"/>
+		<item id="521" action="1"/>
+		<item id="522" action="1"/>
+		<item id="523" action="1"/>
+		<item id="524" action="1"/>
+		<item id="525" action="1"/>
+		<item id="526" action="1"/>
+		<item id="527" action="1"/>
+		<item id="528" action="1"/>
+		<item id="529" action="1"/>
+		<item id="530" action="1"/>
+		<item id="531" action="1"/>
+		<item id="532" action="1"/>
+		<item id="533" action="1"/>
+		<item id="534" action="1"/>
+		<item id="" kind="1" action="6"/>
+		<item id="" kind="2" action="6"/>
+		<item id="" kind="3" action="6"/>
+		<item id="" kind="4" action="6"/>
+		<item id="" kind="5" action="6"/>
+		<item id="" kind="6" action="6"/>
+		<item id="" kind="7" action="6"/>
+		<item id="" kind="8" action="6"/>
+		<item id="" kind="9" action="6"/>
+		<item id="" kind="10" action="6"/>
+		<item id="" kind="11" action="6"/>
+		<item id="" kind="12" action="6"/>
+		<item id="" kind="13" action="6"/>
+		<item id="" kind="14" action="6"/>
+		<item id="" kind="15" action="6"/>
+		<item id="" kind="21" action="2"/>
+		<item id="" kind="22" action="2"/>
+	</npc>
+	<npc name="上官" id="170">
+		<menu>
+function MainDialog()
+AddTalk("我是首饰商上官，豪爽，不掩饰是我的个性，这是我经营的首饰店。")
+AddTradeRepairItem("买卖/修理物品","id[295,296,297,298,299,300,301,302,303,304,305,306,307,308,325,326,327,328,329,330,331,332,333,334,335,336,337,415,416,417,418,419,420,421,422,423,424,425,426,445,446,447,448,449,450,451,452,453,454,455,456,475,476,477,478,479,480,481,482,483,484,485,486,505,506,507,508,509,510,511,512,513,514,515,516,517];type[12,14,15]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","需要什么自己随便看，我挺忙的，想卖或是修理东西的也要快。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+
+
+</menu>
+		<item id="295" kind="" action="1"/>
+		<item id="296" kind="" action="1"/>
+		<item id="297" action="1"/>
+		<item id="298" action="1"/>
+		<item id="299" action="1"/>
+		<item id="300" action="1"/>
+		<item id="301" action="1"/>
+		<item id="302" action="1"/>
+		<item id="303" action="1"/>
+		<item id="304" action="1"/>
+		<item id="305" action="1"/>
+		<item id="306" action="1"/>
+		<item id="307" action="1"/>
+		<item id="308" action="1"/>
+		<item id="325" action="1"/>
+		<item id="326" action="1"/>
+		<item id="327" action="1"/>
+		<item id="328" action="1"/>
+		<item id="329" action="1"/>
+		<item id="330" action="1"/>
+		<item id="331" action="1"/>
+		<item id="332" action="1"/>
+		<item id="333" action="1"/>
+		<item id="334" action="1"/>
+		<item id="335" action="1"/>
+		<item id="336" action="1"/>
+		<item id="337" action="1"/>
+		<item id="415" action="1"/>
+		<item id="416" action="1"/>
+		<item id="417" action="1"/>
+		<item id="418" action="1"/>
+		<item id="419" action="1"/>
+		<item id="420" action="1"/>
+		<item id="421" action="1"/>
+		<item id="422" action="1"/>
+		<item id="423" action="1"/>
+		<item id="424" action="1"/>
+		<item id="425" action="1"/>
+		<item id="426" action="1"/>
+		<item id="445" action="1"/>
+		<item id="446" action="1"/>
+		<item id="447" action="1"/>
+		<item id="448" action="1"/>
+		<item id="449" action="1"/>
+		<item id="450" action="1"/>
+		<item id="451" action="1"/>
+		<item id="452" action="1"/>
+		<item id="453" action="1"/>
+		<item id="454" action="1"/>
+		<item id="456" action="1"/>
+		<item id="475" action="1"/>
+		<item id="476" action="1"/>
+		<item id="477" action="1"/>
+		<item id="478" action="1"/>
+		<item id="479" action="1"/>
+		<item id="480" action="1"/>
+		<item id="481" action="1"/>
+		<item id="482" action="1"/>
+		<item id="483" action="1"/>
+		<item id="484" action="1"/>
+		<item id="485" action="1"/>
+		<item id="486" action="1"/>
+		<item id="505" action="1"/>
+		<item id="506" action="1"/>
+		<item id="507" action="1"/>
+		<item id="508" action="1"/>
+		<item id="509" action="1"/>
+		<item id="510" action="1"/>
+		<item id="511" action="1"/>
+		<item id="512" action="1"/>
+		<item id="513" action="1"/>
+		<item id="514" action="1"/>
+		<item id="515" action="1"/>
+		<item id="516" action="1"/>
+		<item id="517" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="神羿" id="171">
+		<menu>
+function MainDialog()
+AddTalk("我就是气宇轩昂的神羿，一看我名字就知道我是做什么生意的吧。对，我就是专门卖射手类武器的。")
+AddTradeRepairItem("买卖/修理物品","id[184,192,660,661];type[4,5,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","如果你们买不起的话,或是不愿意出我规定的价格卖或是修理的话,请赶紧离开。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+</menu>
+		<item id="184" kind="" action="1"/>
+		<item id="192" kind="" action="1"/>
+		<item id="660" action="1"/>
+		<item id="661" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="石龙" id="175">
+		<menu>
+function MainDialog()
+AddTalk("好！欢迎来到本武器店，就好好逛逛吧。有事情尽管找我，我叫石龙。")
+AddTradeRepairItem("买卖/修理物品","id[177,178,179,180,181,182,183,185,186,187,188,189,190,191,660,661];type[4,5,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","给自己添点新的武器咯！会给自己增色不少的。在我这里出售或是修理东西，保证你们满意。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+
+
+</menu>
+		<item id="178" kind="" action="1"/>
+		<item id="179" kind="" action="1"/>
+		<item id="180" action="1"/>
+		<item id="181" action="1"/>
+		<item id="182" action="1"/>
+		<item id="183" action="1"/>
+		<item id="185" action="1"/>
+		<item id="186" action="1"/>
+		<item id="187" action="1"/>
+		<item id="188" action="1"/>
+		<item id="189" action="1"/>
+		<item id="190" action="1"/>
+		<item id="191" action="1"/>
+		<item id="660" action="1"/>
+		<item id="661" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="端木崖" id="173">
+		<menu>function MainDialog()
+AddTalk("哈哈，你好你好，欢迎光临本店，我是端木崖，洒脱的个性是我一直追求的，服务周到也是我的宗旨。")
+AddTradeRepairItem("买卖/修理物品","id[248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414];type[11,13]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","腰带、鞋子，本店提供一切应该有的物品，保证你们满意。如果你有东西坏了也可以放我这里修理。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+
+</menu>
+		<item id="248" kind="" action="1"/>
+		<item id="249" kind="" action="1"/>
+		<item id="250" action="1"/>
+		<item id="251" action="1"/>
+		<item id="252" action="1"/>
+		<item id="253" action="1"/>
+		<item id="254" action="1"/>
+		<item id="255" action="1"/>
+		<item id="256" action="1"/>
+		<item id="257" action="1"/>
+		<item id="258" action="1"/>
+		<item id="259" action="1"/>
+		<item id="260" action="1"/>
+		<item id="261" action="1"/>
+		<item id="262" action="1"/>
+		<item id="263" action="1"/>
+		<item id="264" action="1"/>
+		<item id="278" action="1"/>
+		<item id="279" action="1"/>
+		<item id="280" action="1"/>
+		<item id="281" action="1"/>
+		<item id="282" action="1"/>
+		<item id="283" action="1"/>
+		<item id="284" action="1"/>
+		<item id="285" action="1"/>
+		<item id="286" action="1"/>
+		<item id="287" action="1"/>
+		<item id="288" action="1"/>
+		<item id="290" action="1"/>
+		<item id="291" action="1"/>
+		<item id="292" action="1"/>
+		<item id="293" action="1"/>
+		<item id="294" action="1"/>
+		<item id="368" action="1"/>
+		<item id="369" action="1"/>
+		<item id="370" action="1"/>
+		<item id="371" action="1"/>
+		<item id="372" action="1"/>
+		<item id="373" action="1"/>
+		<item id="374" action="1"/>
+		<item id="375" action="1"/>
+		<item id="376" action="1"/>
+		<item id="377" action="1"/>
+		<item id="378" action="1"/>
+		<item id="379" action="1"/>
+		<item id="380" action="1"/>
+		<item id="381" action="1"/>
+		<item id="382" action="1"/>
+		<item id="383" action="1"/>
+		<item id="384" action="1"/>
+		<item id="398" action="1"/>
+		<item id="399" action="1"/>
+		<item id="400" action="1"/>
+		<item id="401" action="1"/>
+		<item id="402" action="1"/>
+		<item id="403" action="1"/>
+		<item id="404" action="1"/>
+		<item id="405" action="1"/>
+		<item id="406" action="1"/>
+		<item id="407" action="1"/>
+		<item id="408" action="1"/>
+		<item id="409" action="1"/>
+		<item id="410" action="1"/>
+		<item id="411" action="1"/>
+		<item id="412" action="1"/>
+		<item id="413" action="1"/>
+		<item id="414" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="高桀" id="177">
+		<menu>
+function MainDialog()
+AddTalk("嘿嘿！我是售货员高桀，本店欢迎你们的光临，给自己挑样新的行头，崭新的面貌会让自己心情愉快的哦。")
+AddTradeRepairItem("买卖/修理物品","id[235,236,237,238,239,240,241,242,244,243,245,246,247,265,266,267,268,269,270,271,272,273,274,275,276,277,355,356,357,358,359,360,361,362,363,364,365,366,367,385,386,387,388,389,390,391,392,393,394,395,396,397];type[11,13]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","这里的东西很抢手，给彼此机会嘛，买点咯。当然你也可以卖东西给我或是让我修理。嘿嘿！赶快行动吧。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+</menu>
+		<item id="235" kind="" action="1"/>
+		<item id="236" kind="" action="1"/>
+		<item id="237" action="1"/>
+		<item id="238" action="1"/>
+		<item id="239" action="1"/>
+		<item id="240" action="1"/>
+		<item id="241" action="1"/>
+		<item id="242" action="1"/>
+		<item id="243" action="1"/>
+		<item id="244" action="1"/>
+		<item id="245" action="1"/>
+		<item id="246" action="1"/>
+		<item id="247" action="1"/>
+		<item id="265" action="1"/>
+		<item id="266" action="1"/>
+		<item id="267" action="1"/>
+		<item id="268" action="1"/>
+		<item id="269" action="1"/>
+		<item id="270" action="1"/>
+		<item id="271" action="1"/>
+		<item id="272" action="1"/>
+		<item id="273" action="1"/>
+		<item id="274" action="1"/>
+		<item id="275" action="1"/>
+		<item id="276" action="1"/>
+		<item id="277" action="1"/>
+		<item id="355" action="1"/>
+		<item id="356" action="1"/>
+		<item id="357" action="1"/>
+		<item id="358" action="1"/>
+		<item id="359" action="1"/>
+		<item id="360" action="1"/>
+		<item id="361" action="1"/>
+		<item id="362" action="1"/>
+		<item id="363" action="1"/>
+		<item id="364" action="1"/>
+		<item id="365" action="1"/>
+		<item id="366" action="1"/>
+		<item id="367" action="1"/>
+		<item id="385" action="1"/>
+		<item id="386" action="1"/>
+		<item id="387" action="1"/>
+		<item id="388" action="1"/>
+		<item id="389" action="1"/>
+		<item id="390" action="1"/>
+		<item id="391" action="1"/>
+		<item id="392" action="1"/>
+		<item id="393" action="1"/>
+		<item id="394" action="1"/>
+		<item id="395" action="1"/>
+		<item id="396" action="1"/>
+		<item id="397" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="屠异" id="172">
+		<menu>function MainDialog()
+AddTalk("我是屠异，本人是经营防具的，我这个人性子比较急。")
+AddTradeRepairItem("买卖/修理物品","id[29,30,39,40,110,120];type[1,2]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","选定好目标，买还是卖亦或是修理，请想好，别婆婆妈妈的。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+
+</menu>
+		<item id="29" kind="" action="1"/>
+		<item id="30" kind="" action="1"/>
+		<item id="39" action="1"/>
+		<item id="40" action="1"/>
+		<item id="110" action="1"/>
+		<item id="120" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="疾云" id="176">
+		<menu>
+function MainDialog()
+AddTalk("欢迎欢迎啊，这个防具店虽然不是很华丽，但是品种还是多的，足够大家来挑选哦。记住，我叫疾云。")
+AddTradeRepairItem("买卖/修理物品","id[21,22,23,24,25,26,27,28,31,32,33,34,35,36,37,38,101,102,103,104,105,106,107,108,109,111,112,113,114,115,116,117,118,119];type[1,2]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","相信自己发眼光和感觉，也相信我，放心地和我做买卖吧。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+</menu>
+		<item id="21" kind="" action="1"/>
+		<item id="22" kind="" action="1"/>
+		<item id="23" action="1"/>
+		<item id="24" action="1"/>
+		<item id="25" action="1"/>
+		<item id="26" action="1"/>
+		<item id="27" action="1"/>
+		<item id="28" action="1"/>
+		<item id="31" action="1"/>
+		<item id="32" action="1"/>
+		<item id="33" action="1"/>
+		<item id="34" action="1"/>
+		<item id="35" action="1"/>
+		<item id="36" action="1"/>
+		<item id="37" action="1"/>
+		<item id="38" action="1"/>
+		<item id="101" action="1"/>
+		<item id="102" action="1"/>
+		<item id="103" action="1"/>
+		<item id="104" action="1"/>
+		<item id="105" action="1"/>
+		<item id="106" action="1"/>
+		<item id="107" action="1"/>
+		<item id="108" action="1"/>
+		<item id="109" action="1"/>
+		<item id="111" action="1"/>
+		<item id="112" action="1"/>
+		<item id="113" action="1"/>
+		<item id="114" action="1"/>
+		<item id="115" action="1"/>
+		<item id="116" action="1"/>
+		<item id="117" action="1"/>
+		<item id="118" action="1"/>
+		<item id="119" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="随风" id="174">
+		<menu>function MainDialog()
+AddTalk("你好，欢迎光顾本首饰店，我叫随风。我这里的首饰品种多，都很精致，不要眼花缭乱哦。嘿嘿！")
+AddTradeRepairItem("买卖/修理物品","id[309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,457,458,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,474,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,503,504,518,519,520,21,522,523,524,525,256,527,528,529,530,531,532,533,534];type[12,14,15]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","看得眼睛花吧？拥有任何一件，保证羡慕死旁人，抓紧咯！你也可以卖东西给我或是让我修理。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+</menu>
+		<item id="309" kind="" action="1"/>
+		<item id="310" kind="" action="1"/>
+		<item id="311" action="1"/>
+		<item id="312" action="1"/>
+		<item id="313" action="1"/>
+		<item id="314" action="1"/>
+		<item id="315" action="1"/>
+		<item id="316" action="1"/>
+		<item id="317" action="1"/>
+		<item id="318" action="1"/>
+		<item id="319" action="1"/>
+		<item id="320" action="1"/>
+		<item id="321" action="1"/>
+		<item id="322" action="1"/>
+		<item id="323" action="1"/>
+		<item id="324" action="1"/>
+		<item id="338" action="1"/>
+		<item id="339" action="1"/>
+		<item id="340" action="1"/>
+		<item id="341" action="1"/>
+		<item id="342" action="1"/>
+		<item id="343" action="1"/>
+		<item id="344" action="1"/>
+		<item id="345" action="1"/>
+		<item id="346" action="1"/>
+		<item id="347" action="1"/>
+		<item id="348" action="1"/>
+		<item id="349" action="1"/>
+		<item id="350" action="1"/>
+		<item id="351" action="1"/>
+		<item id="352" action="1"/>
+		<item id="353" action="1"/>
+		<item id="354" action="1"/>
+		<item id="427" action="1"/>
+		<item id="428" action="1"/>
+		<item id="429" action="1"/>
+		<item id="430" action="1"/>
+		<item id="431" action="1"/>
+		<item id="432" action="1"/>
+		<item id="433" action="1"/>
+		<item id="434" action="1"/>
+		<item id="435" action="1"/>
+		<item id="436" action="1"/>
+		<item id="437" action="1"/>
+		<item id="438" action="1"/>
+		<item id="439" action="1"/>
+		<item id="440" action="1"/>
+		<item id="441" action="1"/>
+		<item id="442" action="1"/>
+		<item id="443" action="1"/>
+		<item id="444" action="1"/>
+		<item id="457" action="1"/>
+		<item id="458" action="1"/>
+		<item id="459" action="1"/>
+		<item id="460" action="1"/>
+		<item id="461" action="1"/>
+		<item id="462" action="1"/>
+		<item id="463" action="1"/>
+		<item id="464" action="1"/>
+		<item id="465" action="1"/>
+		<item id="466" action="1"/>
+		<item id="467" action="1"/>
+		<item id="468" action="1"/>
+		<item id="469" action="1"/>
+		<item id="470" action="1"/>
+		<item id="471" action="1"/>
+		<item id="472" action="1"/>
+		<item id="473" action="1"/>
+		<item id="474" action="1"/>
+		<item id="487" action="1"/>
+		<item id="488" action="1"/>
+		<item id="489" action="1"/>
+		<item id="490" action="1"/>
+		<item id="491" action="1"/>
+		<item id="492" action="1"/>
+		<item id="493" action="1"/>
+		<item id="494" action="1"/>
+		<item id="495" action="1"/>
+		<item id="496" action="1"/>
+		<item id="497" action="1"/>
+		<item id="498" action="1"/>
+		<item id="499" action="1"/>
+		<item id="500" action="1"/>
+		<item id="501" action="1"/>
+		<item id="502" action="1"/>
+		<item id="503" action="1"/>
+		<item id="504" action="1"/>
+		<item id="505" action="1"/>
+		<item id="518" action="1"/>
+		<item id="519" action="1"/>
+		<item id="520" action="1"/>
+		<item id="521" action="1"/>
+		<item id="522" action="1"/>
+		<item id="523" action="1"/>
+		<item id="524" action="1"/>
+		<item id="525" action="1"/>
+		<item id="526" action="1"/>
+		<item id="527" action="1"/>
+		<item id="528" action="1"/>
+		<item id="529" action="1"/>
+		<item id="530" kind="" action="1"/>
+		<item id="531" kind="" action="1"/>
+		<item id="532" kind="" action="1"/>
+		<item id="533" kind="" action="1"/>
+		<item id="534" kind="" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="香儿" id="178">
+		<menu>
+function MainDialog()
+AddTalk("你好，我是这里的负责人，我叫香儿，感谢惠顾本首饰店，我将给你最满意的服务。")
+AddTradeRepairItem("买卖/修理物品","id[295,296,297,298,299,300,301,302,303,304,305,306,307,308,325,326,327,328,329,330,331,332,333,334,335,336,337,415,416,417,418,419,420,421,422,423,424,425,426,445,446,447,448,449,450,451,452,453,454,455,456,475,476,477,478,479,480,481,482,483,484,485,486,505,506,507,508,509,510,511,512,513,514,515,516,517];type[12,14,15]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","买点首饰回去吧，给自己点缀点缀。如果你能卖东西给我或是让我修理，香儿我会开心的。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+</menu>
+		<item id="295" kind="" action="1"/>
+		<item id="296" kind="" action="1"/>
+		<item id="297" action="1"/>
+		<item id="298" action="1"/>
+		<item id="299" action="1"/>
+		<item id="300" action="1"/>
+		<item id="301" action="1"/>
+		<item id="302" action="1"/>
+		<item id="303" action="1"/>
+		<item id="304" action="1"/>
+		<item id="305" action="1"/>
+		<item id="306" action="1"/>
+		<item id="307" action="1"/>
+		<item id="308" action="1"/>
+		<item id="325" action="1"/>
+		<item id="326" action="1"/>
+		<item id="327" action="1"/>
+		<item id="328" action="1"/>
+		<item id="329" action="1"/>
+		<item id="330" action="1"/>
+		<item id="331" action="1"/>
+		<item id="332" action="1"/>
+		<item id="333" action="1"/>
+		<item id="334" action="1"/>
+		<item id="335" action="1"/>
+		<item id="336" action="1"/>
+		<item id="337" action="1"/>
+		<item id="415" action="1"/>
+		<item id="416" action="1"/>
+		<item id="417" action="1"/>
+		<item id="418" action="1"/>
+		<item id="419" action="1"/>
+		<item id="420" action="1"/>
+		<item id="421" action="1"/>
+		<item id="422" action="1"/>
+		<item id="423" action="1"/>
+		<item id="424" action="1"/>
+		<item id="425" action="1"/>
+		<item id="426" action="1"/>
+		<item id="445" action="1"/>
+		<item id="446" action="1"/>
+		<item id="447" action="1"/>
+		<item id="448" action="1"/>
+		<item id="449" action="1"/>
+		<item id="450" action="1"/>
+		<item id="451" action="1"/>
+		<item id="452" action="1"/>
+		<item id="453" action="1"/>
+		<item id="454" action="1"/>
+		<item id="456" action="1"/>
+		<item id="475" action="1"/>
+		<item id="476" action="1"/>
+		<item id="477" action="1"/>
+		<item id="478" action="1"/>
+		<item id="479" action="1"/>
+		<item id="480" action="1"/>
+		<item id="481" action="1"/>
+		<item id="482" action="1"/>
+		<item id="483" action="1"/>
+		<item id="484" action="1"/>
+		<item id="485" action="1"/>
+		<item id="486" action="1"/>
+		<item id="505" action="1"/>
+		<item id="506" action="1"/>
+		<item id="507" action="1"/>
+		<item id="508" action="1"/>
+		<item id="509" action="1"/>
+		<item id="510" action="1"/>
+		<item id="511" action="1"/>
+		<item id="512" action="1"/>
+		<item id="513" action="1"/>
+		<item id="514" action="1"/>
+		<item id="515" action="1"/>
+		<item id="516" action="1"/>
+		<item id="517" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="吉游" id="179">
+		<menu>
+function MainDialog()
+AddTalk("好，这里是武器店，本店就供应天师和美女的武器。我是吉游。")
+AddTradeRepairItem("买卖/修理物品","id[200,208];type[6,7]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","想买什么？又想卖或是修理什么呢？")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+</menu>
+		<item id="200" kind="" action="1"/>
+		<item id="208" kind="" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="火法" id="183">
+		<menu>
+function MainDialog()
+AddTalk("我是儒雅俊朗，精通天文地理的武器商火法。")
+AddTradeRepairItem("买卖/修理物品","id[193,194,195,196,197,198,199,201,202,203,204,205,206,207];type[6,7]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","欢迎，需要什么，让我给你点建议吧。如果建议不错的话，就多多光顾本店咯。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+
+
+
+
+
+</menu>
+		<item id="193" kind="" action="1"/>
+		<item id="194" kind="" action="1"/>
+		<item id="195" action="1"/>
+		<item id="196" action="1"/>
+		<item id="197" action="1"/>
+		<item id="198" action="1"/>
+		<item id="199" action="1"/>
+		<item id="201" action="1"/>
+		<item id="202" action="1"/>
+		<item id="203" action="1"/>
+		<item id="204" action="1"/>
+		<item id="205" action="1"/>
+		<item id="206" action="1"/>
+		<item id="207" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="泌清" id="181">
+		<menu>function MainDialog()
+AddTalk("欢迎欢迎啊，我是这里的售货员泌清，虽然我看起来很文静，其实我很热情的哦，是个直爽的人。")
+AddTradeRepairItem("买卖/修理物品","id[248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414];type[11,13]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","随便挑选。千万别错过机会。我们这里的东西很棒的。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")</menu>
+		<item id="248" kind="" action="1"/>
+		<item id="249" kind="" action="1"/>
+		<item id="250" action="1"/>
+		<item id="251" action="1"/>
+		<item id="252" action="1"/>
+		<item id="253" action="1"/>
+		<item id="254" action="1"/>
+		<item id="255" action="1"/>
+		<item id="256" action="1"/>
+		<item id="257" action="1"/>
+		<item id="258" action="1"/>
+		<item id="259" action="1"/>
+		<item id="260" action="1"/>
+		<item id="261" action="1"/>
+		<item id="262" action="1"/>
+		<item id="263" action="1"/>
+		<item id="264" action="1"/>
+		<item id="278" action="1"/>
+		<item id="279" action="1"/>
+		<item id="280" action="1"/>
+		<item id="281" action="1"/>
+		<item id="282" action="1"/>
+		<item id="283" action="1"/>
+		<item id="284" action="1"/>
+		<item id="285" action="1"/>
+		<item id="286" action="1"/>
+		<item id="287" action="1"/>
+		<item id="288" action="1"/>
+		<item id="290" action="1"/>
+		<item id="291" action="1"/>
+		<item id="292" action="1"/>
+		<item id="293" action="1"/>
+		<item id="294" action="1"/>
+		<item id="368" action="1"/>
+		<item id="369" action="1"/>
+		<item id="370" action="1"/>
+		<item id="371" action="1"/>
+		<item id="372" action="1"/>
+		<item id="373" action="1"/>
+		<item id="374" action="1"/>
+		<item id="375" action="1"/>
+		<item id="376" action="1"/>
+		<item id="377" action="1"/>
+		<item id="378" action="1"/>
+		<item id="379" action="1"/>
+		<item id="380" action="1"/>
+		<item id="381" action="1"/>
+		<item id="382" action="1"/>
+		<item id="383" action="1"/>
+		<item id="384" action="1"/>
+		<item id="398" action="1"/>
+		<item id="399" action="1"/>
+		<item id="400" action="1"/>
+		<item id="401" action="1"/>
+		<item id="402" action="1"/>
+		<item id="403" action="1"/>
+		<item id="404" action="1"/>
+		<item id="405" action="1"/>
+		<item id="406" action="1"/>
+		<item id="407" action="1"/>
+		<item id="408" action="1"/>
+		<item id="409" action="1"/>
+		<item id="410" action="1"/>
+		<item id="411" action="1"/>
+		<item id="412" action="1"/>
+		<item id="413" action="1"/>
+		<item id="414" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="术灵" id="185">
+		<menu>
+function MainDialog()
+AddTalk("欢迎欢迎欢迎欢迎！我叫术灵。我这里是专门卖天师和美女的腰带、鞋子。希望你们没走错门哦。")
+AddTradeRepairItem("买卖/修理物品","id[235,236,237,238,239,240,241,242,244,243,245,246,247,265,266,267,268,269,270,271,272,273,274,275,276,277,355,356,357,358,359,360,361,362,363,364,365,366,367,385,386,387,388,389,390,391,392,393,394,395,396,397];type[11,13]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","请问要什么呢？随便挑、随便看，看中了就赶紧哦。多多生意哦，不然我要伤心的啦！")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+</menu>
+		<item id="235" kind="" action="1"/>
+		<item id="236" kind="" action="1"/>
+		<item id="237" action="1"/>
+		<item id="238" action="1"/>
+		<item id="239" action="1"/>
+		<item id="240" action="1"/>
+		<item id="241" action="1"/>
+		<item id="242" action="1"/>
+		<item id="243" action="1"/>
+		<item id="244" action="1"/>
+		<item id="245" action="1"/>
+		<item id="246" action="1"/>
+		<item id="247" action="1"/>
+		<item id="265" action="1"/>
+		<item id="266" action="1"/>
+		<item id="267" action="1"/>
+		<item id="268" action="1"/>
+		<item id="269" action="1"/>
+		<item id="270" action="1"/>
+		<item id="271" action="1"/>
+		<item id="272" action="1"/>
+		<item id="273" action="1"/>
+		<item id="274" action="1"/>
+		<item id="275" action="1"/>
+		<item id="276" action="1"/>
+		<item id="277" action="1"/>
+		<item id="355" action="1"/>
+		<item id="356" action="1"/>
+		<item id="357" action="1"/>
+		<item id="358" action="1"/>
+		<item id="359" action="1"/>
+		<item id="360" action="1"/>
+		<item id="361" action="1"/>
+		<item id="362" action="1"/>
+		<item id="363" action="1"/>
+		<item id="364" action="1"/>
+		<item id="365" action="1"/>
+		<item id="366" action="1"/>
+		<item id="367" action="1"/>
+		<item id="385" action="1"/>
+		<item id="386" action="1"/>
+		<item id="387" action="1"/>
+		<item id="388" action="1"/>
+		<item id="389" action="1"/>
+		<item id="390" action="1"/>
+		<item id="391" action="1"/>
+		<item id="392" action="1"/>
+		<item id="393" action="1"/>
+		<item id="394" action="1"/>
+		<item id="395" action="1"/>
+		<item id="396" action="1"/>
+		<item id="397" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="玄高" id="180">
+		<menu>
+function MainDialog()
+AddTalk("我是玄高。有事情吗？")
+AddTradeRepairItem("买卖/修理物品","id[49,50,59,60,130,140];type[1,2]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","要买卖或是修理的，动作快，我没多大时间和你耗。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+</menu>
+		<item id="49" kind="" action="1"/>
+		<item id="50" kind="" action="1"/>
+		<item id="59" action="1"/>
+		<item id="60" action="1"/>
+		<item id="130" action="1"/>
+		<item id="140" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="太真" id="184">
+		<menu>
+function MainDialog()
+AddTalk("你好你好！我是这个防具店的负责人太真。需要什么防具，可以慢慢挑选。")
+AddTradeRepairItem("买卖/修理物品","id[41,42,43,44,45,46,47,48,51,52,53,54,55,56,57,58,121,122,123,124,125,126,127,128,129,131,132,133,134,135,136,137,138,139];type[1,2]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","不要放弃任何机会，相信我吧，我这里的东西会使你如虎添翼的。记得关照生意，保证不让你吃亏。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")</menu>
+		<item id="41" kind="" action="1"/>
+		<item id="42" kind="" action="1"/>
+		<item id="43" action="1"/>
+		<item id="44" action="1"/>
+		<item id="45" action="1"/>
+		<item id="46" action="1"/>
+		<item id="47" action="1"/>
+		<item id="48" action="1"/>
+		<item id="51" action="1"/>
+		<item id="52" action="1"/>
+		<item id="53" action="1"/>
+		<item id="54" action="1"/>
+		<item id="55" action="1"/>
+		<item id="56" action="1"/>
+		<item id="57" action="1"/>
+		<item id="58" action="1"/>
+		<item id="60" action="1"/>
+		<item id="59" action="1"/>
+		<item id="121" action="1"/>
+		<item id="122" action="1"/>
+		<item id="123" action="1"/>
+		<item id="124" action="1"/>
+		<item id="125" action="1"/>
+		<item id="126" action="1"/>
+		<item id="127" action="1"/>
+		<item id="128" action="1"/>
+		<item id="129" action="1"/>
+		<item id="131" action="1"/>
+		<item id="132" action="1"/>
+		<item id="133" action="1"/>
+		<item id="134" action="1"/>
+		<item id="135" action="1"/>
+		<item id="136" action="1"/>
+		<item id="137" action="1"/>
+		<item id="138" action="1"/>
+		<item id="139" kind="" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="无尘" id="182">
+		<menu>
+function MainDialog()
+AddTalk("我是无尘,你们没钱的别进来,也别走错地方，我这里是专门卖天师和美女的首饰。")
+AddTradeRepairItem("买卖/修理物品","id[309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,457,458,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,474,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,503,504,518,519,520,21,522,523,524,525,256,527,528,529,530,531,532,533,534];type[12,14,15]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","既然进来了，就该有点收获吧。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")</menu>
+		<item id="309" kind="" action="1"/>
+		<item id="310" kind="" action="1"/>
+		<item id="311" action="1"/>
+		<item id="312" action="1"/>
+		<item id="313" action="1"/>
+		<item id="314" action="1"/>
+		<item id="315" action="1"/>
+		<item id="316" action="1"/>
+		<item id="317" action="1"/>
+		<item id="318" action="1"/>
+		<item id="319" action="1"/>
+		<item id="320" action="1"/>
+		<item id="321" action="1"/>
+		<item id="322" action="1"/>
+		<item id="323" action="1"/>
+		<item id="324" action="1"/>
+		<item id="338" action="1"/>
+		<item id="339" action="1"/>
+		<item id="340" action="1"/>
+		<item id="341" action="1"/>
+		<item id="342" action="1"/>
+		<item id="343" action="1"/>
+		<item id="344" action="1"/>
+		<item id="345" action="1"/>
+		<item id="346" action="1"/>
+		<item id="347" action="1"/>
+		<item id="348" action="1"/>
+		<item id="349" action="1"/>
+		<item id="350" action="1"/>
+		<item id="351" action="1"/>
+		<item id="352" action="1"/>
+		<item id="353" action="1"/>
+		<item id="354" action="1"/>
+		<item id="427" action="1"/>
+		<item id="428" action="1"/>
+		<item id="429" kind="" action="1"/>
+		<item id="430" action="1"/>
+		<item id="431" action="1"/>
+		<item id="432" action="1"/>
+		<item id="433" action="1"/>
+		<item id="434" action="1"/>
+		<item id="435" action="1"/>
+		<item id="436" action="1"/>
+		<item id="437" action="1"/>
+		<item id="438" action="1"/>
+		<item id="439" action="1"/>
+		<item id="440" action="1"/>
+		<item id="441" action="1"/>
+		<item id="442" action="1"/>
+		<item id="443" action="1"/>
+		<item id="444" action="1"/>
+		<item id="457" action="1"/>
+		<item id="458" action="1"/>
+		<item id="459" action="1"/>
+		<item id="460" action="1"/>
+		<item id="461" action="1"/>
+		<item id="462" action="1"/>
+		<item id="463" action="1"/>
+		<item id="464" action="1"/>
+		<item id="465" action="1"/>
+		<item id="466" action="1"/>
+		<item id="467" action="1"/>
+		<item id="468" action="1"/>
+		<item id="469" action="1"/>
+		<item id="470" action="1"/>
+		<item id="471" action="1"/>
+		<item id="472" action="1"/>
+		<item id="473" action="1"/>
+		<item id="474" action="1"/>
+		<item id="487" action="1"/>
+		<item id="488" action="1"/>
+		<item id="489" action="1"/>
+		<item id="490" action="1"/>
+		<item id="491" action="1"/>
+		<item id="492" action="1"/>
+		<item id="493" action="1"/>
+		<item id="494" action="1"/>
+		<item id="495" action="1"/>
+		<item id="496" action="1"/>
+		<item id="497" action="1"/>
+		<item id="498" action="1"/>
+		<item id="499" action="1"/>
+		<item id="500" action="1"/>
+		<item id="501" action="1"/>
+		<item id="502" action="1"/>
+		<item id="503" action="1"/>
+		<item id="504" action="1"/>
+		<item id="518" action="1"/>
+		<item id="519" action="1"/>
+		<item id="520" action="1"/>
+		<item id="521" action="1"/>
+		<item id="522" action="1"/>
+		<item id="523" action="1"/>
+		<item id="524" action="1"/>
+		<item id="525" action="1"/>
+		<item id="526" action="1"/>
+		<item id="527" action="1"/>
+		<item id="528" action="1"/>
+		<item id="529" action="1"/>
+		<item id="530" action="1"/>
+		<item id="531" action="1"/>
+		<item id="532" action="1"/>
+		<item id="533" action="1"/>
+		<item id="534" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="无烟" id="186">
+		<menu>
+function MainDialog()
+AddTalk("很开心您能光顾本店。我是这个首饰店的负责人无烟。有什么疑问就来找我吧。我乐意服务的。")
+AddTradeRepairItem("买卖/修理物品","id[295,296,297,298,299,300,301,302,303,304,305,306,307,308,325,326,327,328,329,330,331,332,333,334,335,336,337,415,416,417,418,419,420,421,422,423,424,425,426,445,446,447,448,449,450,451,452,453,454,455,456,475,476,477,478,479,480,481,482,483,484,485,486,505,506,507,508,509,510,511,512,513,514,515,516,517];type[12,14,15]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","那你需要什么呢？过了这个村就没了那个店咯。希望你也有东西可以卖给我或是让我修理。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+
+</menu>
+		<item id="295" kind="" action="1"/>
+		<item id="296" kind="" action="1"/>
+		<item id="297" action="1"/>
+		<item id="298" action="1"/>
+		<item id="299" action="1"/>
+		<item id="300" action="1"/>
+		<item id="301" action="1"/>
+		<item id="302" action="1"/>
+		<item id="303" action="1"/>
+		<item id="304" action="1"/>
+		<item id="305" action="1"/>
+		<item id="306" action="1"/>
+		<item id="307" action="1"/>
+		<item id="308" action="1"/>
+		<item id="325" action="1"/>
+		<item id="326" action="1"/>
+		<item id="327" action="1"/>
+		<item id="328" action="1"/>
+		<item id="329" action="1"/>
+		<item id="330" action="1"/>
+		<item id="331" action="1"/>
+		<item id="332" action="1"/>
+		<item id="333" action="1"/>
+		<item id="334" action="1"/>
+		<item id="335" action="1"/>
+		<item id="336" action="1"/>
+		<item id="337" action="1"/>
+		<item id="415" action="1"/>
+		<item id="416" action="1"/>
+		<item id="417" action="1"/>
+		<item id="418" action="1"/>
+		<item id="419" action="1"/>
+		<item id="420" action="1"/>
+		<item id="421" action="1"/>
+		<item id="422" action="1"/>
+		<item id="423" kind="" action="1"/>
+		<item id="424" action="1"/>
+		<item id="425" action="1"/>
+		<item id="426" action="1"/>
+		<item id="445" action="1"/>
+		<item id="446" action="1"/>
+		<item id="447" action="1"/>
+		<item id="448" action="1"/>
+		<item id="449" action="1"/>
+		<item id="450" action="1"/>
+		<item id="451" action="1"/>
+		<item id="452" action="1"/>
+		<item id="453" action="1"/>
+		<item id="454" action="1"/>
+		<item id="456" action="1"/>
+		<item id="475" action="1"/>
+		<item id="476" action="1"/>
+		<item id="477" action="1"/>
+		<item id="478" action="1"/>
+		<item id="479" action="1"/>
+		<item id="480" action="1"/>
+		<item id="481" action="1"/>
+		<item id="482" action="1"/>
+		<item id="483" action="1"/>
+		<item id="484" action="1"/>
+		<item id="485" action="1"/>
+		<item id="486" action="1"/>
+		<item id="505" action="1"/>
+		<item id="506" action="1"/>
+		<item id="507" action="1"/>
+		<item id="508" action="1"/>
+		<item id="509" action="1"/>
+		<item id="510" action="1"/>
+		<item id="511" action="1"/>
+		<item id="512" action="1"/>
+		<item id="513" action="1"/>
+		<item id="514" action="1"/>
+		<item id="515" action="1"/>
+		<item id="516" action="1"/>
+		<item id="517" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="欧阳甫" id="187">
+		<menu>
+function MainDialog()
+AddTalk("我是欧阳甫，我这个人不喜欢拖泥带水，什么都讲重点。你们来到我这个店，算你们识货。")
+AddTradeRepairItem("买卖/修理物品","id[216,224];type[8,9]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","识货的你，需要什么呢？我这里的武器很抢手的。我也不介意你卖东西给我或是让我修理。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+
+
+
+
+</menu>
+		<item id="216" kind="" action="1"/>
+		<item id="224" kind="" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="玄因" id="191">
+		<menu>
+function MainDialog()
+AddTalk("欢迎啊！请随便看，武器商玄因就是在下啦。不知道您需要什么武器？")
+AddTradeRepairItem("买卖/修理物品","id[209,210,211,212,213,214,215,217,218,221,219,220,222,223];type[8,9]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","我这里的这武器漂亮又不是很贵，当然我不会勉强你和我做买卖的，大家交易开心顺利最重要。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+
+</menu>
+		<item id="209" kind="" action="1"/>
+		<item id="210" kind="" action="1"/>
+		<item id="211" action="1"/>
+		<item id="212" action="1"/>
+		<item id="213" action="1"/>
+		<item id="214" action="1"/>
+		<item id="215" action="1"/>
+		<item id="217" action="1"/>
+		<item id="218" action="1"/>
+		<item id="219" action="1"/>
+		<item id="220" action="1"/>
+		<item id="221" action="1"/>
+		<item id="222" action="1"/>
+		<item id="223" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="赤虹" id="189">
+		<menu>
+function MainDialog()
+AddTalk("好！欢迎来到本店，我是这里的负责人叫赤虹。希望我的活泼可爱能够带给各位快乐。")
+AddTradeRepairItem("买卖/修理物品","id[248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414];type[11,13]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","本店将给您提供最棒的服务，要买什么腰带、鞋子呢？还是要修理或是卖给我东西呢？")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+</menu>
+		<item id="248" kind="" action="1"/>
+		<item id="249" kind="" action="1"/>
+		<item id="250" action="1"/>
+		<item id="251" action="1"/>
+		<item id="252" action="1"/>
+		<item id="253" action="1"/>
+		<item id="254" action="1"/>
+		<item id="255" action="1"/>
+		<item id="256" action="1"/>
+		<item id="257" action="1"/>
+		<item id="258" action="1"/>
+		<item id="259" action="1"/>
+		<item id="260" action="1"/>
+		<item id="261" action="1"/>
+		<item id="262" action="1"/>
+		<item id="263" action="1"/>
+		<item id="264" action="1"/>
+		<item id="278" action="1"/>
+		<item id="279" action="1"/>
+		<item id="280" action="1"/>
+		<item id="281" action="1"/>
+		<item id="282" action="1"/>
+		<item id="283" action="1"/>
+		<item id="284" action="1"/>
+		<item id="285" action="1"/>
+		<item id="286" action="1"/>
+		<item id="287" action="1"/>
+		<item id="288" action="1"/>
+		<item id="290" action="1"/>
+		<item id="291" action="1"/>
+		<item id="292" action="1"/>
+		<item id="293" action="1"/>
+		<item id="294" action="1"/>
+		<item id="368" action="1"/>
+		<item id="369" action="1"/>
+		<item id="370" action="1"/>
+		<item id="371" action="1"/>
+		<item id="372" action="1"/>
+		<item id="373" action="1"/>
+		<item id="374" action="1"/>
+		<item id="375" action="1"/>
+		<item id="376" action="1"/>
+		<item id="377" action="1"/>
+		<item id="378" action="1"/>
+		<item id="379" action="1"/>
+		<item id="380" action="1"/>
+		<item id="381" action="1"/>
+		<item id="382" action="1"/>
+		<item id="383" action="1"/>
+		<item id="384" action="1"/>
+		<item id="398" action="1"/>
+		<item id="399" action="1"/>
+		<item id="400" action="1"/>
+		<item id="401" action="1"/>
+		<item id="402" action="1"/>
+		<item id="403" action="1"/>
+		<item id="404" action="1"/>
+		<item id="405" action="1"/>
+		<item id="406" action="1"/>
+		<item id="407" action="1"/>
+		<item id="408" action="1"/>
+		<item id="409" action="1"/>
+		<item id="410" action="1"/>
+		<item id="411" action="1"/>
+		<item id="412" action="1"/>
+		<item id="413" action="1"/>
+		<item id="414" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="杏儿" id="193">
+		<menu>function MainDialog()
+AddTalk("嘿嘿嘿，光临本店，实属荣幸啊。杏儿在此恭候多时了。")
+AddTradeRepairItem("买卖/修理物品","id[235,236,237,238,239,240,241,242,244,243,245,246,247,265,266,267,268,269,270,271,272,273,274,275,276,277,355,356,357,358,359,360,361,362,363,364,365,366,367,385,386,387,388,389,390,391,392,393,394,395,396,397];type[11,13]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","这里的腰带、鞋子款式多又新且不贵，看中的就大方出手吧！卖东西给我或让我修理东西的也要爽快点。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")</menu>
+		<item id="235" kind="" action="1"/>
+		<item id="236" kind="" action="1"/>
+		<item id="237" action="1"/>
+		<item id="238" action="1"/>
+		<item id="239" action="1"/>
+		<item id="240" action="1"/>
+		<item id="241" action="1"/>
+		<item id="242" action="1"/>
+		<item id="243" action="1"/>
+		<item id="244" action="1"/>
+		<item id="245" action="1"/>
+		<item id="246" action="1"/>
+		<item id="247" action="1"/>
+		<item id="265" action="1"/>
+		<item id="266" action="1"/>
+		<item id="267" action="1"/>
+		<item id="268" action="1"/>
+		<item id="269" action="1"/>
+		<item id="270" action="1"/>
+		<item id="271" action="1"/>
+		<item id="272" action="1"/>
+		<item id="273" action="1"/>
+		<item id="274" action="1"/>
+		<item id="275" action="1"/>
+		<item id="276" action="1"/>
+		<item id="277" action="1"/>
+		<item id="355" action="1"/>
+		<item id="356" action="1"/>
+		<item id="357" action="1"/>
+		<item id="358" action="1"/>
+		<item id="359" action="1"/>
+		<item id="360" action="1"/>
+		<item id="361" action="1"/>
+		<item id="362" action="1"/>
+		<item id="363" action="1"/>
+		<item id="364" action="1"/>
+		<item id="365" action="1"/>
+		<item id="366" action="1"/>
+		<item id="367" action="1"/>
+		<item id="385" action="1"/>
+		<item id="386" action="1"/>
+		<item id="387" action="1"/>
+		<item id="388" action="1"/>
+		<item id="389" action="1"/>
+		<item id="390" action="1"/>
+		<item id="391" action="1"/>
+		<item id="392" action="1"/>
+		<item id="393" action="1"/>
+		<item id="394" action="1"/>
+		<item id="395" action="1"/>
+		<item id="396" action="1"/>
+		<item id="397" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="玄阳" id="188">
+		<menu>
+function MainDialog()
+AddTalk("尊贵的客人，我叫玄阳，以后请多多光临本防具店咯。")
+AddTradeRepairItem("买卖/修理物品","id[70,80,150,160];type[1,2]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","这里的防具最棒的。既然进来了，不管是买卖还是修理，总有点收获再走吧。嘿嘿！")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+</menu>
+		<item id="70" kind="" action="1"/>
+		<item id="80" kind="" action="1"/>
+		<item id="150" action="1"/>
+		<item id="160" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="沐英" id="192">
+		<menu>
+function MainDialog()
+AddTalk("我是防具商沐英，欢迎光临。请问有什么需要？")
+AddTradeRepairItem("买卖/修理物品","id[61,62,63,64,65,66,67,68,69,71,72,73,74,75,76,77,78,79,141,142,143,144,145,146,147,148,149,151,152,153,154,155,156,157,158,159];type[1,2]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","希望大家交易顺利，不知道是要买呢，还是卖或是修理呢？")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+</menu>
+		<item id="61" kind="" action="1"/>
+		<item id="62" kind="" action="1"/>
+		<item id="63" action="1"/>
+		<item id="64" action="1"/>
+		<item id="65" action="1"/>
+		<item id="66" action="1"/>
+		<item id="67" action="1"/>
+		<item id="68" action="1"/>
+		<item id="69" action="1"/>
+		<item id="71" action="1"/>
+		<item id="72" action="1"/>
+		<item id="73" action="1"/>
+		<item id="74" action="1"/>
+		<item id="75" action="1"/>
+		<item id="76" action="1"/>
+		<item id="77" action="1"/>
+		<item id="78" action="1"/>
+		<item id="79" action="1"/>
+		<item id="141" action="1"/>
+		<item id="142" action="1"/>
+		<item id="143" action="1"/>
+		<item id="144" action="1"/>
+		<item id="145" action="1"/>
+		<item id="146" action="1"/>
+		<item id="147" action="1"/>
+		<item id="148" action="1"/>
+		<item id="149" action="1"/>
+		<item id="151" action="1"/>
+		<item id="152" action="1"/>
+		<item id="153" action="1"/>
+		<item id="154" action="1"/>
+		<item id="155" action="1"/>
+		<item id="156" action="1"/>
+		<item id="157" action="1"/>
+		<item id="158" action="1"/>
+		<item id="159" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="汝儿" id="190">
+		<menu>
+function MainDialog()
+AddTalk("尊贵的客人，汝儿就是我啦，以后请多多光临本首饰店咯。")
+AddTradeRepairItem("买卖/修理物品","id[309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,457,458,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,474,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,503,504,518,519,520,21,522,523,524,525,256,527,528,529,530,531,532,533,534];type[12,14,15]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","哟，来啦！那就买点首饰回去，装饰下自己，会更加体面、鲜亮。来吧！你也可以出售或是让我修理一些东西。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+
+</menu>
+		<item id="309" kind="" action="1"/>
+		<item id="310" kind="" action="1"/>
+		<item id="311" action="1"/>
+		<item id="312" action="1"/>
+		<item id="313" action="1"/>
+		<item id="314" action="1"/>
+		<item id="315" action="1"/>
+		<item id="316" action="1"/>
+		<item id="317" action="1"/>
+		<item id="318" action="1"/>
+		<item id="319" action="1"/>
+		<item id="320" action="1"/>
+		<item id="321" action="1"/>
+		<item id="322" action="1"/>
+		<item id="323" action="1"/>
+		<item id="324" action="1"/>
+		<item id="338" action="1"/>
+		<item id="339" action="1"/>
+		<item id="340" action="1"/>
+		<item id="341" action="1"/>
+		<item id="342" action="1"/>
+		<item id="343" action="1"/>
+		<item id="344" action="1"/>
+		<item id="345" action="1"/>
+		<item id="346" action="1"/>
+		<item id="347" action="1"/>
+		<item id="348" action="1"/>
+		<item id="349" action="1"/>
+		<item id="350" action="1"/>
+		<item id="351" action="1"/>
+		<item id="352" action="1"/>
+		<item id="353" action="1"/>
+		<item id="354" action="1"/>
+		<item id="427" action="1"/>
+		<item id="428" action="1"/>
+		<item id="429" action="1"/>
+		<item id="430" action="1"/>
+		<item id="431" action="1"/>
+		<item id="432" action="1"/>
+		<item id="433" action="1"/>
+		<item id="434" action="1"/>
+		<item id="435" action="1"/>
+		<item id="436" action="1"/>
+		<item id="437" action="1"/>
+		<item id="438" action="1"/>
+		<item id="439" action="1"/>
+		<item id="440" action="1"/>
+		<item id="441" action="1"/>
+		<item id="442" action="1"/>
+		<item id="443" action="1"/>
+		<item id="444" action="1"/>
+		<item id="457" action="1"/>
+		<item id="458" action="1"/>
+		<item id="459" action="1"/>
+		<item id="460" action="1"/>
+		<item id="461" action="1"/>
+		<item id="462" action="1"/>
+		<item id="463" action="1"/>
+		<item id="464" action="1"/>
+		<item id="465" action="1"/>
+		<item id="466" action="1"/>
+		<item id="467" action="1"/>
+		<item id="468" action="1"/>
+		<item id="469" action="1"/>
+		<item id="470" action="1"/>
+		<item id="471" action="1"/>
+		<item id="472" action="1"/>
+		<item id="473" action="1"/>
+		<item id="474" action="1"/>
+		<item id="487" action="1"/>
+		<item id="488" action="1"/>
+		<item id="489" action="1"/>
+		<item id="490" action="1"/>
+		<item id="491" action="1"/>
+		<item id="492" action="1"/>
+		<item id="493" action="1"/>
+		<item id="494" action="1"/>
+		<item id="495" action="1"/>
+		<item id="496" action="1"/>
+		<item id="497" action="1"/>
+		<item id="498" action="1"/>
+		<item id="499" action="1"/>
+		<item id="500" action="1"/>
+		<item id="501" action="1"/>
+		<item id="502" action="1"/>
+		<item id="503" action="1"/>
+		<item id="504" action="1"/>
+		<item id="518" action="1"/>
+		<item id="519" action="1"/>
+		<item id="520" action="1"/>
+		<item id="521" action="1"/>
+		<item id="522" action="1"/>
+		<item id="523" action="1"/>
+		<item id="524" action="1"/>
+		<item id="525" action="1"/>
+		<item id="526" action="1"/>
+		<item id="527" action="1"/>
+		<item id="528" action="1"/>
+		<item id="529" action="1"/>
+		<item id="530" action="1"/>
+		<item id="531" action="1"/>
+		<item id="532" action="1"/>
+		<item id="533" action="1"/>
+		<item id="534" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="霞儿" id="194">
+		<menu>
+function MainDialog()
+AddTalk("首饰商霞儿就是我啦。没钱的就别来烦我。")
+AddTradeRepairItem("买卖/修理物品","id[295,296,297,298,299,300,301,302,303,304,305,306,307,308,325,326,327,328,329,330,331,332,333,334,335,336,337,415,416,417,418,419,420,421,422,423,424,425,426,445,446,447,448,449,450,451,452,453,454,455,456,475,476,477,478,479,480,481,482,483,484,485,486,505,506,507,508,509,510,511,512,513,514,515,516,517];type[12,14,15]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,21,22]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","要赶紧啦，别浪费我时间，我忙着呢。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+</menu>
+		<item id="295" kind="" action="1"/>
+		<item id="296" kind="" action="1"/>
+		<item id="297" action="1"/>
+		<item id="298" action="1"/>
+		<item id="299" action="1"/>
+		<item id="300" action="1"/>
+		<item id="301" action="1"/>
+		<item id="302" action="1"/>
+		<item id="303" action="1"/>
+		<item id="304" action="1"/>
+		<item id="305" action="1"/>
+		<item id="306" action="1"/>
+		<item id="307" action="1"/>
+		<item id="308" action="1"/>
+		<item id="325" action="1"/>
+		<item id="326" action="1"/>
+		<item id="327" action="1"/>
+		<item id="328" action="1"/>
+		<item id="329" action="1"/>
+		<item id="330" action="1"/>
+		<item id="331" action="1"/>
+		<item id="332" action="1"/>
+		<item id="333" action="1"/>
+		<item id="334" action="1"/>
+		<item id="335" action="1"/>
+		<item id="336" action="1"/>
+		<item id="337" action="1"/>
+		<item id="415" action="1"/>
+		<item id="416" action="1"/>
+		<item id="417" action="1"/>
+		<item id="418" action="1"/>
+		<item id="419" action="1"/>
+		<item id="420" action="1"/>
+		<item id="421" action="1"/>
+		<item id="422" action="1"/>
+		<item id="423" action="1"/>
+		<item id="424" action="1"/>
+		<item id="425" action="1"/>
+		<item id="426" action="1"/>
+		<item id="445" action="1"/>
+		<item id="446" action="1"/>
+		<item id="447" action="1"/>
+		<item id="448" action="1"/>
+		<item id="449" action="1"/>
+		<item id="450" action="1"/>
+		<item id="451" action="1"/>
+		<item id="452" action="1"/>
+		<item id="453" action="1"/>
+		<item id="454" action="1"/>
+		<item id="456" action="1"/>
+		<item id="475" action="1"/>
+		<item id="476" action="1"/>
+		<item id="477" action="1"/>
+		<item id="478" action="1"/>
+		<item id="479" action="1"/>
+		<item id="480" action="1"/>
+		<item id="481" action="1"/>
+		<item id="482" action="1"/>
+		<item id="483" action="1"/>
+		<item id="484" action="1"/>
+		<item id="485" action="1"/>
+		<item id="486" action="1"/>
+		<item id="505" action="1"/>
+		<item id="506" action="1"/>
+		<item id="507" action="1"/>
+		<item id="508" action="1"/>
+		<item id="509" action="1"/>
+		<item id="510" action="1"/>
+		<item id="511" action="1"/>
+		<item id="512" action="1"/>
+		<item id="513" action="1"/>
+		<item id="514" action="1"/>
+		<item id="515" action="1"/>
+		<item id="516" action="1"/>
+		<item id="517" action="1"/>
+		<item kind="1" action="6"/>
+		<item kind="2" action="6"/>
+		<item kind="3" action="6"/>
+		<item kind="4" action="6"/>
+		<item kind="5" action="6"/>
+		<item kind="6" action="6"/>
+		<item kind="7" action="6"/>
+		<item kind="8" action="6"/>
+		<item kind="9" action="6"/>
+		<item kind="10" action="6"/>
+		<item kind="11" action="6"/>
+		<item kind="12" action="6"/>
+		<item kind="13" action="6"/>
+		<item kind="14" action="6"/>
+		<item kind="15" action="6"/>
+		<item kind="21" action="2"/>
+		<item kind="22" action="2"/>
+	</npc>
+	<npc name="王掌柜" id="195">
+		<menu>
+function MainDialog()
+AddTalk("“欢迎，是在这里的掌柜，姓王。客官，里面请。我们这里的山珍海味，人间极品，保证让你回味无穷。 我们这里还帮你们介绍一流的保镖，保你行走江湖的时候感到安全，人嘛，安全很重要。在我这里你也可以烹饪自己想要的食物。")
+AddTradeItem("买卖食物","id[611,612];type[19]","type[19]","需要什么食物？要来点吗？你也可以卖给我些东西，好东西大家分享啊，让我也见识见识。")               AddMakeItem("烹饪食物","id[616,617,618,619,620,621,622,626,627,628,629,630,631,632,636,637,638,639,640,641,642,646,647,648,649,650,651,652]"," 自己想要烹饪什么美食佳肴呢？")
+AddDialogItem("关于保镖介绍","Dialog1")                                                           AddDialogItem("关于烹饪食物介绍","Dialog2")
+AddCloseItem("离开")
+end
+
+function Dialog1()
+AddTalk("关于保镖介绍:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+                                                                            function Dialog2()
+AddTalk("关于打造食物介绍:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+                                                                         AddDialog("MainDialog")
+
+
+
+</menu>
+		<item id="611" kind="" action="1"/>
+		<item id="612" kind="" action="1"/>
+		<item id="" kind="19" action="2"/>
+		<item id="616" action="8"/>
+		<item id="617" action="8"/>
+		<item id="618" action="8"/>
+		<item id="619" action="8"/>
+		<item id="620" action="8"/>
+		<item id="621" action="8"/>
+		<item id="622" action="8"/>
+		<item id="626" action="8"/>
+		<item id="627" action="8"/>
+		<item id="628" action="8"/>
+		<item id="629" action="8"/>
+		<item id="630" action="8"/>
+		<item id="631" action="8"/>
+		<item id="632" action="8"/>
+		<item id="636" action="8"/>
+		<item id="637" action="8"/>
+		<item id="638" action="8"/>
+		<item id="639" action="8"/>
+		<item id="640" action="8"/>
+		<item id="641" action="8"/>
+		<item id="642" action="8"/>
+		<item id="646" action="8"/>
+		<item id="647" action="8"/>
+		<item id="648" action="8"/>
+		<item id="649" action="8"/>
+		<item id="650" action="8"/>
+		<item id="651" action="8"/>
+		<item id="652" action="8"/>
+	</npc>
+	<npc name="陈掌柜" id="196">
+		<menu>
+function MainDialog()
+AddTalk("你好你好，欢迎啊。我是这里的老板，大家都叫我陈掌柜。客官一路辛苦了。有什么吩咐吗？最近好吗？一路都安全吧？需要保镖吗？让它们来保护保护您啊。做点喜欢的食物犒劳自己啊。")
+AddTradeItem("买卖食物","id[611];type[19]","type[19]","饿了吧？来点什么呢？当然你也可以将你的美食出售给我的。")                                             AddMakeItem("烹饪食物","id[613,614,615,623,624,625,633,634,635,643,644,645]"," 想要亲自动手什么美食呢？")
+AddDialogItem("关于保镖介绍","Dialog1")                                   AddDialogItem("关于烹饪食物介绍","Dialog2")
+AddCloseItem("离开")
+end
+
+function Dialog1()
+AddTalk("关于保镖介绍:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+                                                                           function Dialog2()
+AddTalk("关于打造食物介绍:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+                               
+AddDialog("MainDialog")
+</menu>
+		<item id="611" kind="" action="1"/>
+		<item id="" kind="19" action="2"/>
+		<item id="613" kind="" action="8"/>
+		<item id="614" kind="" action="8"/>
+		<item id="615" action="8"/>
+		<item id="623" action="8"/>
+		<item id="624" action="8"/>
+		<item id="625" action="8"/>
+		<item id="633" action="8"/>
+		<item id="634" action="8"/>
+		<item id="635" action="8"/>
+		<item id="643" action="8"/>
+		<item id="644" action="8"/>
+		<item id="645" action="8"/>
+	</npc>
+	<npc name="苏掌柜" id="251">
+		<menu>
+function MainDialog()
+AddTalk("你好啊。我就是闻名的药店老板。人称苏掌柜。人在江湖，谁都避免不了受伤的。所以碰到我，算你们运气。")
+AddTradeItem("买卖药品","id[578,579,585,586];type[17]","type[17]","你们可以在我这里买到天下的灵丹秒药，来补充你们的元气。当然，你们也可以多余的药卖给我，赚点小钱啊。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")</menu>
+		<item id="578" kind="" action="1"/>
+		<item id="579" kind="" action="1"/>
+		<item id="585" kind="" action="1"/>
+		<item id="586" kind="" action="1"/>
+		<item kind="19" action="2"/>
+	</npc>
+	<npc name="汤掌柜" id="253">
+		<menu>
+function MainDialog()
+AddTalk("你好啊。我就是闻名的药店老板。人称汤掌柜。人在江湖，谁都避免不了受伤的。所以碰到我，算你们运气。")
+AddTradeItem("买卖药品","id[578,585];type[17]","type[17]","你们可以在我这里买到天下的灵丹秒药，来补充你们的元气。当然，你们也可以多余的药卖给我，赚点小钱啊。")
+AddCloseItem("离开")
+end
+
+AddDialog("MainDialog")
+
+
+
+
+</menu>
+		<item id="578" kind="" action="1"/>
+		<item id="585" kind="" action="1"/>
+		<item kind="19" action="2"/>
+	</npc>
+	<npc name="林商" id="197">
+		<menu>
+function MainDialog()
+AddTalk("我姓林，我专门收集高档的原料，大家叫我林商。")
+AddTradeItem("收集高级原料","","id[537,538,539,540,541,542,545,546,547,548,579,550,553,554,555,556,559,560,561,562,567,568,569,570,571,572,573,574,575,576,577,604,605,606,607,608,609,610,679,680,681,682,683];type[16,18,27,28]","怎么？有原料啊？都有什么原料？快说，爽快点。")
+AddDialogItem("关于原料的获得方式","Dialog1")
+AddCloseItem("离开")
+end
+
+function Dialog1()
+AddTalk("关于原料的获得方式:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+
+AddDialog("MainDialog")
+
+</menu>
+		<item id="537" action="2"/>
+		<item id="538" action="2"/>
+		<item id="539" action="2"/>
+		<item id="540" action="2"/>
+		<item id="541" action="2"/>
+		<item id="542" action="2"/>
+		<item id="545" action="2"/>
+		<item id="546" action="2"/>
+		<item id="547" action="2"/>
+		<item id="548" action="2"/>
+		<item id="549" action="2"/>
+		<item id="550" action="2"/>
+		<item id="553" action="2"/>
+		<item id="554" action="2"/>
+		<item id="555" action="2"/>
+		<item id="556" action="2"/>
+		<item id="559" action="2"/>
+		<item id="560" action="2"/>
+		<item id="561" action="2"/>
+		<item id="562" action="2"/>
+		<item id="567" action="2"/>
+		<item id="568" action="2"/>
+		<item id="569" action="2"/>
+		<item id="570" action="2"/>
+		<item id="571" action="2"/>
+		<item id="572" action="2"/>
+		<item id="573" action="2"/>
+		<item id="574" action="2"/>
+		<item id="575" action="2"/>
+		<item id="576" action="2"/>
+		<item id="577" action="2"/>
+		<item id="604" action="2"/>
+		<item id="605" action="2"/>
+		<item id="606" action="2"/>
+		<item id="607" action="2"/>
+		<item id="608" action="2"/>
+		<item id="609" action="2"/>
+		<item id="610" action="2"/>
+		<item id="679" action="2"/>
+		<item id="680" action="2"/>
+		<item id="681" action="2"/>
+		<item id="682" action="2"/>
+		<item id="683" action="2"/>
+	</npc>
+	<npc name="董商" id="200">
+		<menu>
+function MainDialog()
+AddTalk("你好，在下姓董，虽然我收集的是低级点的原料，但是江湖上，人们给我面子，称我一声董商。")
+AddTradeItem("收集低级原料","","id[535,536,543,544,545,551,552,557,558,563,564,565,566,601,602,603,677,678,683];type[16,18,27,28]","你有多余的原料吗？卖给我好了，放心啦，我不会赚你多少的，但是呢，也别让我亏本哦。")
+AddDialogItem("关于原料的获得方式","Dialog1")
+AddCloseItem("离开")
+end
+
+function Dialog1()
+AddTalk("关于原料的获得方式:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+
+AddDialog("MainDialog")
+
+
+
+
+</menu>
+		<item id="535" action="2"/>
+		<item id="536" action="2"/>
+		<item id="543" action="2"/>
+		<item id="544" action="2"/>
+		<item id="545" action="2"/>
+		<item id="551" action="2"/>
+		<item id="552" action="2"/>
+		<item id="557" action="2"/>
+		<item id="558" action="2"/>
+		<item id="563" action="2"/>
+		<item id="564" action="2"/>
+		<item id="565" action="2"/>
+		<item id="566" action="2"/>
+		<item id="601" action="2"/>
+		<item id="602" action="2"/>
+		<item id="603" action="2"/>
+		<item id="677" action="2"/>
+		<item id="678" action="2"/>
+		<item id="683" action="2"/>
+	</npc>
+	<npc name="冯师傅" id="211">
+		<menu>function MainDialog()
+AddTalk("你好，我是专门帮你们锻造高级武器的冯师傅。我可以利用一定的资源给你打造高级的武器，也可以对你现有的道具进行升级，但是需要一定的属性宝石哦，将一普通的道具升级成威力点的道具。道具使用久了当然会有损坏啦，我也可以帮你修理一下的啊。在我这里也可以合成物品的。")
+AddTradeRepairItem("修理物品","","","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","要修理什么吗？")
+AddMakeItem("打造武器","id[168,176,184,192,200,208,216,224,547,548,660,661]"," 在我这里打造的武器保证高质量。")
+AddUpItem("升级物品"," type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","要升级些什么吗？升级后的会有不一样的效果哦，试试吧！")                                                                           AddChangeItem("合成物品"," id[679,680,681]","要合成些什么吗？")
+AddDialogItem("关于修理","Dialog1")
+AddDialogItem("关于打造","Dialog2")                                                             
+AddDialogItem("关于升级和合成","Dialog3")                                        
+AddCloseItem("离开")
+end
+
+function Dialog1()
+AddTalk("关于修理: 玩家可以把一切道具放在任一锻造功能的NPC和道具买卖功能的NPC上进行修理。修理包括“全部修理”与“个别修理”和“自行修理”；\nA．全部修理：修理人物当前装备的全部道具（不包含包裹中的）；\nB．个别修理：修理人物指定的（包括包裹与身上的），当鼠标移动到该按钮上时显示该按钮为“个别修理”，鼠标左键单击该按钮，光标变成“小锤子”，当“小锤子”移动到要修理的物品上的时候，“显示修理费用”，左键再次点击 修理完毕，玩家包裹内显示的 “金币”数 即时相应减少，装备最大耐久值不下降。\nC．自行修理：具体操作同“个别修理”。")
+AddDialogItem("离开","MainDialog")
+end
+
+function Dialog2()                                           
+AddTalk("关于打造: 打造物品 有低级和高级之分，比如在低级打造处不能打造高级物品。在每个打造场景内，按打造道具的类型分有：武器类、防具类（服装、头盔、盾牌）、首饰类（项链、戒指、护腕）、腰带、鞋子类。玩家要打造什么东西，就去相应的NPC处。在满足一定条件情况下， NPC从玩家那里扣除相应的原料，然后把生成的道具放在玩家道具栏内。  ")
+AddDialogItem("离开","MainDialog")
+end  
+                                                                                                                
+function Dialog3()
+AddTalk("关于升级和合成: 玩家与升级NPC对话，放上必须得物品与材料，再确定升级后或者合成后，NPC当然会扣除一定的金钱，当然升级有概率问题，级升得越高，失败的机率越大。而合成却是100%成功。带上需要升级的物品以及必备的材料及足够的金钱，物品一共可以升级6次；\n1）升级：用鼠标左键点住需要升级的物品不放，然后拖放到升级界面的道具框内，每次只能放一类升级的物品，然后在材料框内放上升级需要的材料。而升级需要的原料来自于怪物掉落：墨玉飞蝗、魔夜珠、魔月珠、魔血玉、混魔石、魔灵石、圣灵珠；\n2）合成：鼠标左键点住合成的物品放入合成界面的道具栏内，每次只能放一种合成的物品才能正常合成。5个相同的次一级的材合成一个比自己高一等级的材料，例如5个墨玉飞蝗合成一个魔夜珠，依次类推。")
+AddDialogItem("离开","MainDialog")
+end
+                                                                             
+AddDialog("MainDialog")                                                                
+</menu>
+		<item kind="1" action="20"/>
+		<item kind="2" action="20"/>
+		<item kind="3" action="20"/>
+		<item id="" kind="4" action="20"/>
+		<item kind="5" action="20"/>
+		<item kind="6" action="20"/>
+		<item kind="7" action="20"/>
+		<item kind="8" action="20"/>
+		<item kind="9" action="20"/>
+		<item kind="10" action="20"/>
+		<item kind="11" action="20"/>
+		<item kind="12" action="20"/>
+		<item kind="13" action="20"/>
+		<item kind="14" action="20"/>
+		<item kind="15" action="20"/>
+		<item id="168" action="8"/>
+		<item id="176" action="8"/>
+		<item id="184" action="8"/>
+		<item id="192" action="8"/>
+		<item id="200" action="8"/>
+		<item id="208" action="8"/>
+		<item id="216" action="8"/>
+		<item id="224" action="8"/>
+		<item id="547" action="8"/>
+		<item id="548" action="8"/>
+		<item id="660" action="8"/>
+		<item id="661" action="8"/>
+		<item id="679" action="8"/>
+		<item id="680" action="8"/>
+		<item id="681" action="8"/>
+	</npc>
+	<npc name="汪师傅" id="212">
+		<menu>function MainDialog()
+AddTalk("好啊。想要打造防具呢还是要升级、合成自己手中的物品呢？还是物品不是很好使了想修理一下呢？那么你都带好资源了吧。那还等什么呢？")
+AddTradeRepairItem("修理物品","","","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","要修理些什么吗？")
+AddMakeItem("打造防具","id[9,10,19,20,29,30,39,40,49,50,59,60,70,80,90,100,110,120,130,140,150,160,229,234,540,541,547,548]"," 要打造些什么呢？")
+AddUpItem("升级物品"," type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","要升级些什么吗？")    
+AddChangeItem("合成物品"," id[679,680,681]","要合成些什么吗？")
+AddDialogItem("关于修理","Dialog1")
+AddDialogItem("关于打造","Dialog2")                                        
+AddDialogItem("关于升级和合成","Dialog3")                                        
+AddCloseItem("离开")
+end
+
+function Dialog1()
+AddTalk("关于修理: 玩家可以把一切道具放在任一锻造功能的NPC和道具买卖功能的NPC上进行修理。修理包括“全部修理”与“个别修理”和“自行修理”；\nA．全部修理：修理人物当前装备的全部道具（不包含包裹中的）；\nB．个别修理：修理人物指定的（包括包裹与身上的），当鼠标移动到该按钮上时显示该按钮为“个别修理”，鼠标左键单击该按钮，光标变成“小锤子”，当“小锤子”移动到要修理的物品上的时候，“显示修理费用”，左键再次点击 修理完毕，玩家包裹内显示的 “金币”数 即时相应减少，装备最大耐久值不下降。\nC．自行修理：具体操作同“个别修理”。")
+AddDialogItem("离开","MainDialog")
+end
+
+function Dialog2()                                                               
+AddTalk("关于打造: 打造物品 有低级和高级之分，比如在低级打造处不能打造高级物品。在每个打造场景内，按打造道具的类型分有：武器类、防具类（服装、头盔、盾牌）、首饰类（项链、戒指、护腕）、腰带、鞋子类。玩家要打造什么东西，就去相应的NPC处。在满足一定条件情况下， NPC从玩家那里扣除相应的原料，然后把生成的道具放在玩家道具栏内。 ")
+AddDialogItem("离开","MainDialog")
+end 
+                                                                                                                                                                      
+function Dialog3()
+AddTalk("关于升级和合成: 玩家与升级NPC对话，放上必须得物品与材料，再确定升级后或者合成后，NPC当然会扣除一定的金钱，当然升级有概率问题，级升得越高，失败的机率越大。而合成却是100%成功。带上需要升级的物品以及必备的材料及足够的金钱，物品一共可以升级6次；\n 1）升级：用鼠标左键点住需要升级的物品不放，然后拖放到升级界面的道具框内，每次只能放一类升级的物品，然后在材料框内放上升级需要的材料。而升级需要的原料来自于怪物掉落：墨玉飞蝗、魔夜珠、魔月珠、魔血玉、混魔石、魔灵石、圣灵珠；\n2）合成：鼠标左键点住合成的物品放入合成界面的道具栏内，每次只能放一种合成的物品才能正常合成。5个相同的次一级的材料合成一个比自己高一等级的材料，例如5个墨玉飞蝗合成一个魔夜珠，依次类推。 ")
+AddDialogItem("离开","MainDialog")
+end
+                                                                             
+AddDialog("MainDialog")                                                                
+</menu>
+		<item kind="1" action="20"/>
+		<item id="" kind="2" action="20"/>
+		<item kind="3" action="20"/>
+		<item kind="4" action="20"/>
+		<item kind="5" action="20"/>
+		<item kind="6" action="20"/>
+		<item kind="7" action="20"/>
+		<item kind="8" action="20"/>
+		<item kind="9" action="20"/>
+		<item kind="10" action="20"/>
+		<item kind="11" action="20"/>
+		<item kind="12" action="20"/>
+		<item kind="13" action="20"/>
+		<item kind="14" action="20"/>
+		<item kind="15" action="20"/>
+		<item id="10" action="8"/>
+		<item id="19" action="8"/>
+		<item id="20" action="8"/>
+		<item id="29" action="8"/>
+		<item id="30" action="8"/>
+		<item id="39" action="8"/>
+		<item id="40" action="8"/>
+		<item id="49" action="8"/>
+		<item id="50" action="8"/>
+		<item id="59" action="8"/>
+		<item id="60" action="8"/>
+		<item id="70" action="8"/>
+		<item id="80" action="8"/>
+		<item id="90" action="8"/>
+		<item id="100" action="8"/>
+		<item id="110" action="8"/>
+		<item id="120" action="8"/>
+		<item id="130" action="8"/>
+		<item id="140" action="8"/>
+		<item id="150" action="8"/>
+		<item id="160" action="8"/>
+		<item id="229" action="8"/>
+		<item id="234" action="8"/>
+		<item id="540" action="8"/>
+		<item id="541" action="8"/>
+		<item id="547" action="8"/>
+		<item id="548" action="8"/>
+		<item id="679" action="8"/>
+		<item id="680" action="8"/>
+		<item id="681" action="8"/>
+	</npc>
+	<npc name="于师傅" id="213">
+		<menu>function MainDialog()
+AddTalk("哟，进来看看。路上辛苦啊。长途跋涉的，没有一双好的鞋子怎么能行呢？还有一条好的腰带同样很重要。所以我这个高级锻造师就诞生了。我呢还能帮你们修理、升级、合成物品。")
+AddTradeRepairItem("修理物品","","","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","要修理腰带还是鞋子呢？")
+AddMakeItem("打造腰带/鞋子","id[248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414,547,548]"," 给自己制造好鞋子好腰带吧！")
+AddUpItem("升级物品"," type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","升级后的保证漂亮。")  
+AddChangeItem("合成物品"," id[679,680,681]","要合成些什么吗？")
+AddDialogItem("关于修理","Dialog1")
+AddDialogItem("关于打造","Dialog2")                                        
+AddDialogItem("关于升级和合成","Dialog3")                                        
+AddCloseItem("离开")
+end
+
+function Dialog1()
+AddTalk("关于修理: 玩家可以把一切道具放在任一锻造功能的NPC和道具买卖功能的NPC上进行修理。修理包括“全部修理”与“个别修理”和“自行修理”；\nA．全部修理：修理人物当前装备的全部道具（不包含包裹中的）；\nB．个别修理：修理人物指定的（包括包裹与身上的），当鼠标移动到该按钮上时显示该按钮为“个别修理”，鼠标左键单击该按钮，光标变成“小锤子”，当“小锤子”移动到要修理的物品上的时候，“显示修理费用”，左键再次点击 修理完毕，玩家包裹内显示的 “金币”数 即时相应减少，装备最大耐久值不下降。\nC．自行修理：具体操作同“个别修理”。")
+AddDialogItem("离开","MainDialog")
+end
+
+function Dialog2()                                                               
+AddTalk("关于打造: 打造物品 有低级和高级之分，比如在低级打造处不能打造高级物品。在每个打造场景内，按打造道具的类型分有：武器类、防具类（服装、头盔、盾牌）、首饰类（项链、戒指、护腕）、腰带、鞋子类。玩家要打造什么东西，就去相应的NPC处。在满足一定条件情况下， NPC从玩家那里扣除相应的原料，然后把生成的道具放在玩家道具栏内。 ")
+AddDialogItem("离开","MainDialog")
+end                                                                                                                                                                       
+                                                                                                                                                                    
+function Dialog3()                                                                                                                                               
+AddTalk("关于升级和合成: 玩家与升级NPC对话，放上必须得物品与材料，再确定升级后或者合成后，NPC当然会扣除一定的金钱，当然升级有概率问题，级升得越高，失败的机率越大。而合成却是100%成功。带上需要升级的物品以及必备的材料及足够的金钱，物品一共可以升级6次；\n1）升级：用鼠标左键点住需要升级的物品不放，然后拖放到升级界面的道具框内，每次只能放一类升级的物品，然后在材料框内放上升级需要的材料。而升级需要的原料来自于怪物掉落：墨玉飞蝗、魔夜珠、魔月珠、魔血玉、混魔石、魔灵石、圣灵珠；\n2）合成：鼠标左键点住合成的物品放入合成界面的道具栏内，每次只能放一种合成的物品才能正常合成。5个相同的次一级的材料合成一个比自己高一等级的材料，例如5个墨玉飞蝗合成一个魔夜珠，依次类推。 ")
+AddDialogItem("离开","MainDialog")
+end
+                                                                             
+AddDialog("MainDialog")                                                                
+</menu>
+		<item kind="1" action="20"/>
+		<item kind="2" action="20"/>
+		<item kind="3" action="20"/>
+		<item kind="4" action="20"/>
+		<item kind="5" action="20"/>
+		<item kind="6" action="20"/>
+		<item kind="7" action="20"/>
+		<item kind="8" action="20"/>
+		<item kind="9" action="20"/>
+		<item kind="10" action="20"/>
+		<item kind="11" action="20"/>
+		<item kind="12" action="20"/>
+		<item kind="13" action="20"/>
+		<item kind="14" action="20"/>
+		<item kind="15" action="20"/>
+		<item id="248" action="8"/>
+		<item id="249" action="8"/>
+		<item id="250" action="8"/>
+		<item id="251" action="8"/>
+		<item id="252" action="8"/>
+		<item id="253" action="8"/>
+		<item id="254" action="8"/>
+		<item id="255" action="8"/>
+		<item id="256" action="8"/>
+		<item id="257" action="8"/>
+		<item id="258" action="8"/>
+		<item id="259" action="8"/>
+		<item id="260" action="8"/>
+		<item id="261" action="8"/>
+		<item id="262" action="8"/>
+		<item id="263" action="8"/>
+		<item id="264" action="8"/>
+		<item id="278" action="8"/>
+		<item id="279" action="8"/>
+		<item id="280" action="8"/>
+		<item id="281" action="8"/>
+		<item id="282" action="8"/>
+		<item id="283" action="8"/>
+		<item id="284" action="8"/>
+		<item id="285" action="8"/>
+		<item id="286" action="8"/>
+		<item id="287" action="8"/>
+		<item id="288" action="8"/>
+		<item id="290" action="8"/>
+		<item id="291" action="8"/>
+		<item id="292" action="8"/>
+		<item id="293" action="8"/>
+		<item id="294" action="8"/>
+		<item id="368" action="8"/>
+		<item id="369" action="8"/>
+		<item id="370" action="8"/>
+		<item id="371" action="8"/>
+		<item id="372" action="8"/>
+		<item id="373" action="8"/>
+		<item id="374" action="8"/>
+		<item id="375" action="8"/>
+		<item id="376" action="8"/>
+		<item id="377" action="8"/>
+		<item id="378" action="8"/>
+		<item id="379" action="8"/>
+		<item id="380" action="8"/>
+		<item id="381" action="8"/>
+		<item id="382" action="8"/>
+		<item id="383" action="8"/>
+		<item id="384" action="8"/>
+		<item id="398" action="8"/>
+		<item id="399" action="8"/>
+		<item id="400" action="8"/>
+		<item id="401" action="8"/>
+		<item id="402" action="8"/>
+		<item id="403" action="8"/>
+		<item id="404" action="8"/>
+		<item id="405" action="8"/>
+		<item id="406" action="8"/>
+		<item id="407" action="8"/>
+		<item id="408" action="8"/>
+		<item id="409" action="8"/>
+		<item id="410" action="8"/>
+		<item id="411" action="8"/>
+		<item id="412" action="8"/>
+		<item id="413" action="8"/>
+		<item id="414" action="8"/>
+		<item id="547" action="8"/>
+		<item id="548" action="8"/>
+		<item id="679" action="8"/>
+		<item id="680" action="8"/>
+		<item id="681" action="8"/>
+	</npc>
+	<npc name="江师傅" id="214">
+		<menu>function MainDialog()
+AddTalk("闪亮、璀璨夺目的首饰真诱惑人啊。你不想为自己量身定做一款吗？那你就找我吧。保证给你打造的首饰是独一无二的。你肯定有些值得珍藏的但略有点瑕疵，放心我帮你修理好。升级、合成也是我的本领，升级后的更加眩目。")
+AddTradeRepairItem("修理物品","","","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","要修理些什么吗？")
+AddMakeItem("打造首饰","id[309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,457,458,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,474,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,503,504,518,519,520,21,522,523,524,525,256,527,528,529,530,531,532,533,534,547,548]"," 要打造些什么首饰吗？")
+AddUpItem("升级物品"," type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","要升级些什么呢？")  
+AddChangeItem("合成物品"," id[679,680,681]","要合成些什么吗？")
+AddDialogItem("关于修理","Dialog1")
+AddDialogItem("关于打造","Dialog2")                                       
+AddDialogItem("关于升级和合成","Dialog3")                                        
+AddCloseItem("离开")
+end
+
+function Dialog1()
+AddTalk("关于修理: 玩家可以把一切道具放在任一锻造功能的NPC和道具买卖功能的NPC上进行修理。修理包括“全部修理”与“个别修理”和“自行修理”；\nA．全部修理：修理人物当前装备的全部道具（不包含包裹中的）；\nB．个别修理：修理人物指定的（包括包裹与身上的），当鼠标移动到该按钮上时显示该按钮为“个别修理”，鼠标左键单击该按钮，光标变成“小锤子”，当“小锤子”移动到要修理的物品上的时候，“显示修理费用”，左键再次点击 修理完毕，玩家包裹内显示的 “金币”数 即时相应减少，装备最大耐久值不下降。\nC．自行修理：具体操作同“个别修理”。")
+AddDialogItem("离开","MainDialog")
+end
+
+function Dialog2()                                                               
+AddTalk("关于打造: 打造物品 有低级和高级之分，比如在低级打造处不能打造高级物品。在每个打造场景内，按打造道具的类型分有：武器类、防具类（服装、头盔、盾牌）、首饰类（项链、戒指、护腕）、腰带、鞋子类。玩家要打造什么东西，就去相应的NPC处。在满足一定条件情况下， NPC从玩家那里扣除相应的原料，然后把生成的道具放在玩家道具栏内。 ")
+AddDialogItem("离开","MainDialog")
+end                                                                                                                                                                       
+
+function Dialog3()
+AddTalk("关于升级和合成: 玩家与升级NPC对话，放上必须得物品与材料，再确定升级后或者合成后，NPC当然会扣除一定的金钱，当然升级有概率问题，级升得越高，失败的机率越大。而合成却是100%成功。带上需要升级的物品以及必备的材料及足够的金钱，物品一共可以升级6次；\n1）升级：用鼠标左键点住需要升级的物品不放，然后拖放到升级界面的道具框内，每次只能放一类升级的物品，然后在材料框内放上升级需要的材料。而升级需要的原料来自于怪物掉落：墨玉飞蝗、魔夜珠、魔月珠、魔血玉、混魔石、魔灵石、圣灵珠；\n2）合成：鼠标左键点住合成的物品放入合成界面的道具栏内，每次只能放一种合成的物品才能正常合成。5个相同的次一级的材料合成一个比自己高一等级的材料，例如5个墨玉飞蝗合成一个魔夜珠，依次类推。 ")
+AddDialogItem("离开","MainDialog")
+end
+                                                                             
+AddDialog("MainDialog")                                                                
+
+</menu>
+		<item kind="1" action="20"/>
+		<item id="" kind="2" action="20"/>
+		<item kind="3" action="20"/>
+		<item kind="4" action="20"/>
+		<item kind="5" action="20"/>
+		<item kind="6" action="20"/>
+		<item kind="7" action="20"/>
+		<item kind="8" action="20"/>
+		<item kind="9" action="20"/>
+		<item kind="10" action="20"/>
+		<item kind="11" action="20"/>
+		<item kind="12" action="20"/>
+		<item kind="13" action="20"/>
+		<item kind="14" action="20"/>
+		<item kind="15" action="20"/>
+		<item id="309" action="8"/>
+		<item id="310" action="8"/>
+		<item id="311" action="8"/>
+		<item id="312" action="8"/>
+		<item id="313" action="8"/>
+		<item id="314" action="8"/>
+		<item id="315" action="8"/>
+		<item id="316" action="8"/>
+		<item id="317" action="8"/>
+		<item id="318" action="8"/>
+		<item id="319" action="8"/>
+		<item id="320" action="8"/>
+		<item id="321" action="8"/>
+		<item id="322" action="8"/>
+		<item id="323" action="8"/>
+		<item id="324" action="8"/>
+		<item id="338" action="8"/>
+		<item id="339" action="8"/>
+		<item id="340" action="8"/>
+		<item id="341" action="8"/>
+		<item id="342" action="8"/>
+		<item id="343" action="8"/>
+		<item id="344" action="8"/>
+		<item id="345" action="8"/>
+		<item id="346" action="8"/>
+		<item id="347" action="8"/>
+		<item id="348" action="8"/>
+		<item id="349" action="8"/>
+		<item id="350" action="8"/>
+		<item id="351" action="8"/>
+		<item id="352" action="8"/>
+		<item id="353" action="8"/>
+		<item id="354" action="8"/>
+		<item id="427" action="8"/>
+		<item id="428" action="8"/>
+		<item id="429" action="8"/>
+		<item id="430" action="8"/>
+		<item id="431" action="8"/>
+		<item id="432" action="8"/>
+		<item id="433" action="8"/>
+		<item id="434" action="8"/>
+		<item id="435" action="8"/>
+		<item id="436" action="8"/>
+		<item id="437" action="8"/>
+		<item id="438" action="8"/>
+		<item id="439" action="8"/>
+		<item id="440" action="8"/>
+		<item id="441" action="8"/>
+		<item id="442" action="8"/>
+		<item id="443" action="8"/>
+		<item id="444" action="8"/>
+		<item id="457" action="8"/>
+		<item id="458" action="8"/>
+		<item id="459" action="8"/>
+		<item id="460" action="8"/>
+		<item id="461" action="8"/>
+		<item id="462" action="8"/>
+		<item id="463" action="8"/>
+		<item id="464" action="8"/>
+		<item id="465" action="8"/>
+		<item id="466" action="8"/>
+		<item id="467" action="8"/>
+		<item id="468" action="8"/>
+		<item id="469" action="8"/>
+		<item id="470" action="8"/>
+		<item id="471" action="8"/>
+		<item id="472" action="8"/>
+		<item id="473" action="8"/>
+		<item id="474" action="8"/>
+		<item id="487" action="8"/>
+		<item id="488" action="8"/>
+		<item id="489" action="8"/>
+		<item id="490" action="8"/>
+		<item id="491" action="8"/>
+		<item id="492" action="8"/>
+		<item id="493" action="8"/>
+		<item id="494" action="8"/>
+		<item id="495" action="8"/>
+		<item id="496" action="8"/>
+		<item id="497" action="8"/>
+		<item id="498" action="8"/>
+		<item id="499" action="8"/>
+		<item id="500" action="8"/>
+		<item id="501" action="8"/>
+		<item id="502" action="8"/>
+		<item id="503" action="8"/>
+		<item id="504" action="8"/>
+		<item id="518" action="8"/>
+		<item id="519" action="8"/>
+		<item id="520" action="8"/>
+		<item id="521" action="8"/>
+		<item id="522" action="8"/>
+		<item id="523" action="8"/>
+		<item id="524" action="8"/>
+		<item id="525" action="8"/>
+		<item id="526" action="8"/>
+		<item id="527" action="8"/>
+		<item id="528" action="8"/>
+		<item id="529" action="8"/>
+		<item id="530" action="8"/>
+		<item id="531" action="8"/>
+		<item id="532" action="8"/>
+		<item id="533" action="8"/>
+		<item id="534" action="8"/>
+		<item id="547" action="8"/>
+		<item id="548" action="8"/>
+		<item id="679" action="8"/>
+		<item id="680" action="8"/>
+		<item id="681" action="8"/>
+	</npc>
+	<npc name="祝师傅" id="215">
+		<menu>function MainDialog()
+AddTalk("你好，欢迎。我这里是专门锻造相对比较低级的武器。我可以帮你利用有限的资源打造武器，你的物品如果有损害，我可以帮你修理。我还可以帮你升级、合成你想要的物品，让它看起来更加实用美观。")
+AddTradeRepairItem("修理物品","","","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","要修理些什么吗？")
+AddMakeItem("打造武器","id[161,162,163,164,165,166,167,169,170,171,172,173,174,175,177,178,179,180,182,183,185,186,187,188,189,190,191,193,194,195,196,197,198,199,201,202,023,204,205,206,207,209,210,211,212,213,214,215,217,218,219,220,221,222,223,660,661]"," 要打造些什么吗？")
+AddUpItem("升级物品"," type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","要升级些什么吗？")    
+AddChangeItem("合成物品"," id[677,678]","要合成些什么吗？")
+AddDialogItem("关于修理","Dialog1")
+AddDialogItem("关于打造","Dialog2")                                        
+AddDialogItem("关于升级和合成","Dialog3")                                        
+AddCloseItem("离开")
+end
+
+function Dialog1()
+AddTalk("关于修理: 玩家可以把一切道具放在任一锻造功能的NPC和道具买卖功能的NPC上进行修理。修理包括“全部修理”与“个别修理”和“自行修理”；\nA．全部修理：修理人物当前装备的全部道具（不包含包裹中的）；\nB．个别修理：修理人物指定的（包括包裹与身上的），当鼠标移动到该按钮上时显示该按钮为“个别修理”，鼠标左键单击该按钮，光标变成“小锤子”，当“小锤子”移动到要修理的物品上的时候，“显示修理费用”，左键再次点击 修理完毕，玩家包裹内显示的 “金币”数 即时相应减少，装备最大耐久值不下降。\nC．自行修理：具体操作同“个别修理”。")
+AddDialogItem("离开","MainDialog")
+end
+
+function Dialog2()                                                               
+AddTalk("关于打造: 打造物品 有低级和高级之分，比如在低级打造处不能打造高级物品。在每个打造场景内，按打造道具的类型分有：武器类、防具类（服装、头盔、盾牌）、首饰类（项链、戒指、护腕）、腰带、鞋子类。玩家要打造什么东西，就去相应的NPC处。在满足一定条件情况下， NPC从玩家那里扣除相应的原料，然后把生成的道具放在玩家道具栏内。")
+AddDialogItem("离开","MainDialog")
+end                                                                                                                                                                       
+
+function Dialog3()
+AddTalk("关于升级和合成: 玩家与升级NPC对话，放上必须得物品与材料，再确定升级后或者合成后，NPC当然会扣除一定的金钱，当然升级有概率问题，级升得越高，失败的机率越大。而合成却是100%成功。带上需要升级的物品以及必备的材料及足够的金钱，物品一共可以升级6次；\n1）升级：用鼠标左键点住需要升级的物品不放，然后拖放到升级界面的道具框内，每次只能放一类升级的物品，然后在材料框内放上升级需要的材料。而升级需要的原料来自于怪物掉落：墨玉飞蝗、魔夜珠、魔月珠、魔血玉、混魔石、魔灵石、圣灵珠；\n2）合成：鼠标左键点住合成的物品放入合成界面的道具栏内，每次只能放一种合成的物品才能正常合成。5个相同的次一级的材料合成一个比自己高一等级的材料，例如5个墨玉飞蝗合成一个魔夜珠，依次类推。 ")
+AddDialogItem("离开","MainDialog")
+end
+                                                                             
+AddDialog("MainDialog")                                                                
+
+</menu>
+		<item kind="1" action="20"/>
+		<item kind="2" action="20"/>
+		<item kind="3" action="20"/>
+		<item kind="4" action="20"/>
+		<item kind="5" action="20"/>
+		<item kind="6" action="20"/>
+		<item kind="7" action="20"/>
+		<item id="" kind="8" action="20"/>
+		<item kind="9" action="20"/>
+		<item kind="10" action="20"/>
+		<item kind="11" action="20"/>
+		<item kind="12" action="20"/>
+		<item kind="13" action="20"/>
+		<item kind="14" action="20"/>
+		<item kind="15" action="20"/>
+		<item id="161" action="8"/>
+		<item id="162" action="8"/>
+		<item id="163" action="8"/>
+		<item id="164" action="8"/>
+		<item id="165" action="8"/>
+		<item id="166" action="8"/>
+		<item id="167" action="8"/>
+		<item id="169" action="8"/>
+		<item id="170" action="8"/>
+		<item id="171" action="8"/>
+		<item id="172" action="8"/>
+		<item id="173" action="8"/>
+		<item id="174" action="8"/>
+		<item id="175" action="8"/>
+		<item id="177" action="8"/>
+		<item id="178" action="8"/>
+		<item id="179" action="8"/>
+		<item id="180" action="8"/>
+		<item id="181" action="8"/>
+		<item id="182" action="8"/>
+		<item id="183" action="8"/>
+		<item id="185" action="8"/>
+		<item id="186" action="8"/>
+		<item id="187" action="8"/>
+		<item id="188" action="8"/>
+		<item id="189" action="8"/>
+		<item id="190" action="8"/>
+		<item id="191" action="8"/>
+		<item id="193" action="8"/>
+		<item id="194" action="8"/>
+		<item id="195" action="8"/>
+		<item id="196" action="8"/>
+		<item id="197" action="8"/>
+		<item id="198" action="8"/>
+		<item id="199" action="8"/>
+		<item id="201" action="8"/>
+		<item id="202" action="8"/>
+		<item id="203" action="8"/>
+		<item id="204" action="8"/>
+		<item id="205" action="8"/>
+		<item id="206" action="8"/>
+		<item id="207" action="8"/>
+		<item id="209" action="8"/>
+		<item id="210" action="8"/>
+		<item id="211" action="8"/>
+		<item id="212" action="8"/>
+		<item id="213" action="8"/>
+		<item id="214" action="8"/>
+		<item id="215" action="8"/>
+		<item id="217" action="8"/>
+		<item id="218" action="8"/>
+		<item id="219" action="8"/>
+		<item id="220" action="8"/>
+		<item id="221" action="8"/>
+		<item id="222" action="8"/>
+		<item id="223" action="8"/>
+		<item id="660" action="8"/>
+		<item id="661" action="8"/>
+		<item id="677" action="8"/>
+		<item id="678" action="8"/>
+	</npc>
+	<npc name="钟师傅" id="216">
+		<menu>function MainDialog()
+AddTalk("防具是很重要的。它们可以起到防御的作用。所以，你值得拥有它。除了去商店里买，你不是别无选择的。我锻造铺的打造、升级、合成、修理过的物品也是挺不错的哟。")
+AddTradeRepairItem("修理物品","","","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","要修理些什么吗？保证修理后和原来的一样厉害。")
+AddMakeItem("打造防具","id[1,2,3,4,5,6,7,8,11,12,13,14,15,16,17,18,21,22,23,24,25,26,27,28,31,32,33,34,35,36,37,38,41,42,43,44,45,46,47,48,51,52,53,54,55,56,57,58,61,62,63,64,65,66,67,68,69,71,72,73,74,75,76,77,78,79,81,82,83,84,85,86,87,88,89,91,92,93,94,95,96,97,98,99,101,102,,103,104,105,106,107,108,109,111,112,113,114,115,116,117,118,119,121,122,123,124,125,126,127,128,129,131,132,133,134,135,136,137,138,139,141,142,143,144,145,146,147,148,149,151,152,153,154,155,156,157,158,159,225,226,227,228,230,231,232,233]"," 要打造些什么吗？")
+AddUpItem("升级物品"," type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","要升级些什么吗？让它们更厉害些吧！")                                                              
+AddChangeItem("合成物品"," id[677,678]","要合成些什么吗？")
+AddDialogItem("关于修理","Dialog1")
+AddDialogItem("关于打造","Dialog2")                                        
+AddDialogItem("关于升级和合成","Dialog3")                                        
+AddCloseItem("离开")
+end
+
+function Dialog1()
+AddTalk("关于修理: 玩家可以把一切道具放在任一锻造功能的NPC和道具买卖功能的NPC上进行修理。修理包括“全部修理”与“个别修理”和“自行修理”；\nA．全部修理：修理人物当前装备的全部道具（不包含包裹中的）；\nB．个别修理：修理人物指定的（包括包裹与身上的），当鼠标移动到该按钮上时显示该按钮为“个别修理”，鼠标左键单击该按钮，光标变成“小锤子”，当“小锤子”移动到要修理的物品上的时候，“显示修理费用”，左键再次点击 修理完毕，玩家包裹内显示的 “金币”数 即时相应减少，装备最大耐久值不下降。\nC．自行修理：具体操作同“个别修理”。")
+AddDialogItem("离开","MainDialog")
+end
+
+function Dialog2()                                                               
+AddTalk("关于打造: 打造物品 有低级和高级之分，比如在低级打造处不能打造高级物品。在每个打造场景内，按打造道具的类型分有：武器类、防具类（服装、头盔、盾牌）、首饰类（项链、戒指、护腕）、腰带、鞋子类。玩家要打造什么东西，就去相应的NPC处。在满足一定条件情况下， NPC从玩家那里扣除相应的原料，然后把生成的道具放在玩家道具栏内。")
+AddDialogItem("离开","MainDialog")
+end                                                                                                                                                                      
+
+function Dialog3()
+AddTalk("关于升级和合成: 玩家与升级NPC对话，放上必须得物品与材料，再确定升级后或者合成后，NPC当然会扣除一定的金钱，当然升级有概率问题，级升得越高，失败的机率越大。而合成却是100%成功。带上需要升级的物品以及必备的材料及足够的金钱，物品一共可以升级6次；\n1）升级：用鼠标左键点住需要升级的物品不放，然后拖放到升级界面的道具框内，每次只能放一类升级的物品，然后在材料框内放上升级需要的材料。而升级需要的原料来自于怪物掉落：墨玉飞蝗、魔夜珠、魔月珠、魔血玉、混魔石、魔灵石、圣灵珠；\n2）合成：鼠标左键点住合成的物品放入合成界面的道具栏内，每次只能放一种合成的物品才能正常合成。5个相同的次一级的材料合成一个比自己高一等级的材料，例如5个墨玉飞蝗合成一个魔夜珠，依次类推。 ")
+AddDialogItem("离开","MainDialog")
+end
+                                                                             
+AddDialog("MainDialog")                                                                
+</menu>
+		<item kind="1" action="20"/>
+		<item kind="2" action="20"/>
+		<item kind="3" action="20"/>
+		<item kind="4" action="20"/>
+		<item kind="5" action="20"/>
+		<item kind="6" action="20"/>
+		<item kind="7" action="20"/>
+		<item kind="8" action="20"/>
+		<item kind="9" action="20"/>
+		<item kind="10" action="20"/>
+		<item kind="11" action="20"/>
+		<item id="" kind="12" action="20"/>
+		<item kind="13" action="20"/>
+		<item kind="14" action="20"/>
+		<item kind="15" action="20"/>
+		<item id="1" action="8"/>
+		<item id="2" action="8"/>
+		<item id="3" action="8"/>
+		<item id="4" action="8"/>
+		<item id="5" action="8"/>
+		<item id="6" action="8"/>
+		<item id="7" action="8"/>
+		<item id="8" action="8"/>
+		<item id="11" action="8"/>
+		<item id="12" action="8"/>
+		<item id="13" action="8"/>
+		<item id="14" action="8"/>
+		<item id="15" action="8"/>
+		<item id="16" action="8"/>
+		<item id="17" action="8"/>
+		<item id="18" action="8"/>
+		<item id="21" action="8"/>
+		<item id="22" action="8"/>
+		<item id="23" action="8"/>
+		<item id="24" action="8"/>
+		<item id="25" action="8"/>
+		<item id="26" action="8"/>
+		<item id="27" action="8"/>
+		<item id="28" action="8"/>
+		<item id="31" action="8"/>
+		<item id="32" action="8"/>
+		<item id="33" action="8"/>
+		<item id="34" action="8"/>
+		<item id="35" action="8"/>
+		<item id="36" action="8"/>
+		<item id="37" action="8"/>
+		<item id="38" action="8"/>
+		<item id="41" action="8"/>
+		<item id="42" action="8"/>
+		<item id="43" action="8"/>
+		<item id="44" action="8"/>
+		<item id="45" action="8"/>
+		<item id="46" action="8"/>
+		<item id="47" action="8"/>
+		<item id="48" action="8"/>
+		<item id="51" action="8"/>
+		<item id="52" action="8"/>
+		<item id="53" action="8"/>
+		<item id="54" action="8"/>
+		<item id="55" action="8"/>
+		<item id="56" action="8"/>
+		<item id="57" action="8"/>
+		<item id="58" action="8"/>
+		<item id="61" action="8"/>
+		<item id="62" action="8"/>
+		<item id="63" action="8"/>
+		<item id="64" action="8"/>
+		<item id="65" action="8"/>
+		<item id="66" action="8"/>
+		<item id="67" action="8"/>
+		<item id="68" action="8"/>
+		<item id="69" action="8"/>
+		<item id="71" action="8"/>
+		<item id="72" action="8"/>
+		<item id="73" action="8"/>
+		<item id="74" action="8"/>
+		<item id="75" action="8"/>
+		<item id="76" action="8"/>
+		<item id="77" action="8"/>
+		<item id="78" action="8"/>
+		<item id="79" action="8"/>
+		<item id="81" action="8"/>
+		<item id="82" action="8"/>
+		<item id="83" action="8"/>
+		<item id="84" action="8"/>
+		<item id="85" action="8"/>
+		<item id="86" action="8"/>
+		<item id="87" action="8"/>
+		<item id="88" action="8"/>
+		<item id="89" action="8"/>
+		<item id="91" action="8"/>
+		<item id="92" action="8"/>
+		<item id="93" action="8"/>
+		<item id="94" action="8"/>
+		<item id="95" action="8"/>
+		<item id="96" action="8"/>
+		<item id="97" action="8"/>
+		<item id="98" action="8"/>
+		<item id="99" action="8"/>
+		<item id="101" action="8"/>
+		<item id="102" action="8"/>
+		<item id="103" action="8"/>
+		<item id="104" action="8"/>
+		<item id="105" action="8"/>
+		<item id="106" action="8"/>
+		<item id="107" action="8"/>
+		<item id="108" action="8"/>
+		<item id="109" action="8"/>
+		<item id="111" action="8"/>
+		<item id="112" action="8"/>
+		<item id="113" action="8"/>
+		<item id="114" action="8"/>
+		<item id="115" action="8"/>
+		<item id="116" action="8"/>
+		<item id="117" action="8"/>
+		<item id="118" action="8"/>
+		<item id="119" action="8"/>
+		<item id="121" action="8"/>
+		<item id="122" action="8"/>
+		<item id="123" action="8"/>
+		<item id="124" action="8"/>
+		<item id="125" action="8"/>
+		<item id="126" action="8"/>
+		<item id="127" action="8"/>
+		<item id="128" action="8"/>
+		<item id="129" action="8"/>
+		<item id="131" action="8"/>
+		<item id="132" action="8"/>
+		<item id="133" action="8"/>
+		<item id="134" action="8"/>
+		<item id="135" action="8"/>
+		<item id="136" action="8"/>
+		<item id="137" action="8"/>
+		<item id="138" action="8"/>
+		<item id="139" action="8"/>
+		<item id="141" action="8"/>
+		<item id="142" action="8"/>
+		<item id="143" action="8"/>
+		<item id="144" action="8"/>
+		<item id="145" action="8"/>
+		<item id="146" action="8"/>
+		<item id="147" action="8"/>
+		<item id="148" action="8"/>
+		<item id="149" action="8"/>
+		<item id="151" action="8"/>
+		<item id="152" action="8"/>
+		<item id="153" action="8"/>
+		<item id="154" action="8"/>
+		<item id="155" action="8"/>
+		<item id="156" action="8"/>
+		<item id="157" action="8"/>
+		<item id="158" action="8"/>
+		<item id="159" action="8"/>
+		<item id="225" action="8"/>
+		<item id="226" action="8"/>
+		<item id="227" action="8"/>
+		<item id="228" action="8"/>
+		<item id="230" action="8"/>
+		<item id="231" action="8"/>
+		<item id="232" action="8"/>
+		<item id="233" action="8"/>
+		<item id="677" action="8"/>
+		<item id="678" action="8"/>
+	</npc>
+	<npc name="姚师傅" id="217">
+		<menu>function MainDialog()
+AddTalk("哈哈哈。腰带、鞋子，我这里都可以锻造。是要打造？是要升级？是要修理吗？没问题的。我一一帮你搞定。在我这里也可以合成物品的。")
+AddTradeRepairItem("修理物品","","","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","要修理些什么吗？")
+AddMakeItem("打造腰带/鞋子","id[235,236,237,238,239,240,241,242,244,243,245,246,247,265,266,267,268,269,270,271,272,273,274,275,276,277,355,356,357,358,359,360,361,362,363,364,365,366,367,385,386,387,388,389,390,391,392,393,394,395,396,397]"," 要打造些什么吗？")
+AddUpItem("升级物品"," type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","要升级些什么吗？")   
+AddChangeItem("合成物品"," id[677,678]","要合成些什么吗？")
+AddDialogItem("关于修理","Dialog1")
+AddDialogItem("关于打造","Dialog2")                                        
+AddDialogItem("关于升级和合成","Dialog3")                                        
+AddCloseItem("离开")
+end
+
+function Dialog1()
+AddTalk("关于修理: 玩家可以把一切道具放在任一锻造功能的NPC和道具买卖功能的NPC上进行修理。修理包括“全部修理”与“个别修理”和“自行修理”；\nA．全部修理：修理人物当前装备的全部道具（不包含包裹中的）；\nB．个别修理：修理人物指定的（包括包裹与身上的），当鼠标移动到该按钮上时显示该按钮为“个别修理”，鼠标左键单击该按钮，光标变成“小锤子”，当“小锤子”移动到要修理的物品上的时候，“显示修理费用”，左键再次点击 修理完毕，玩家包裹内显示的 “金币”数 即时相应减少，装备最大耐久值不下降。\nC．自行修理：具体操作同“个别修理”。")
+AddDialogItem("离开","MainDialog")
+end
+
+function Dialog2()                                                               
+AddTalk("关于打造: 打造物品 有低级和高级之分，比如在低级打造处不能打造高级物品。在每个打造场景内，按打造道具的类型分有：武器类、防具类（服装、头盔、盾牌）、首饰类（项链、戒指、护腕）、腰带、鞋子类。玩家要打造什么东西，就去相应的NPC处。在满足一定条件情况下， NPC从玩家那里扣除相应的原料，然后把生成的道具放在玩家道具栏内。")
+AddDialogItem("离开","MainDialog")
+end                                                                                                                                                                       
+
+function Dialog3()
+AddTalk("关于升级和合成: 玩家与升级NPC对话，放上必须得物品与材料，再确定升级后或者合成后，NPC当然会扣除一定的金钱，当然升级有概率问题，级升得越高，失败的机率越大。而合成却是100%成功。带上需要升级的物品以及必备的材料及足够的金钱，物品一共可以升级6次；\n1）升级：用鼠标左键点住需要升级的物品不放，然后拖放到升级界面的道具框内，每次只能放一类升级的物品，然后在材料框内放上升级需要的材料。而升级需要的原料来自于怪物掉落：墨玉飞蝗、魔夜珠、魔月珠、魔血玉、混魔石、魔灵石、圣灵珠；\n2）合成：鼠标左键点住合成的物品放入合成界面的道具栏内，每次只能放一种合成的物品才能正常合成。5个相同的次一级的材料合成一个比自己高一等级的材料，例如5个墨玉飞蝗合成一个魔夜珠，依次类推。 ")
+AddDialogItem("离开","MainDialog")
+end
+                                                                             
+AddDialog("MainDialog")                                                                
+</menu>
+		<item kind="1" action="20"/>
+		<item kind="2" action="20"/>
+		<item kind="3" action="20"/>
+		<item kind="4" action="20"/>
+		<item kind="5" action="20"/>
+		<item kind="6" action="20"/>
+		<item kind="7" action="20"/>
+		<item kind="8" action="20"/>
+		<item kind="9" action="20"/>
+		<item kind="10" action="20"/>
+		<item kind="11" action="20"/>
+		<item kind="12" action="20"/>
+		<item kind="13" action="20"/>
+		<item kind="14" action="20"/>
+		<item kind="15" action="20"/>
+		<item id="235" action="8"/>
+		<item id="236" action="8"/>
+		<item id="237" action="8"/>
+		<item id="238" action="8"/>
+		<item id="239" action="8"/>
+		<item id="240" action="8"/>
+		<item id="241" action="8"/>
+		<item id="242" action="8"/>
+		<item id="243" action="8"/>
+		<item id="244" action="8"/>
+		<item id="245" action="8"/>
+		<item id="246" action="8"/>
+		<item id="247" action="8"/>
+		<item id="265" action="8"/>
+		<item id="266" action="8"/>
+		<item id="267" action="8"/>
+		<item id="268" action="8"/>
+		<item id="269" action="8"/>
+		<item id="270" action="8"/>
+		<item id="271" action="8"/>
+		<item id="272" action="8"/>
+		<item id="273" action="8"/>
+		<item id="274" action="8"/>
+		<item id="275" action="8"/>
+		<item id="276" action="8"/>
+		<item id="277" action="8"/>
+		<item id="355" action="8"/>
+		<item id="356" action="8"/>
+		<item id="357" action="8"/>
+		<item id="358" action="8"/>
+		<item id="359" action="8"/>
+		<item id="360" action="8"/>
+		<item id="361" action="8"/>
+		<item id="362" action="8"/>
+		<item id="363" action="8"/>
+		<item id="364" action="8"/>
+		<item id="365" action="8"/>
+		<item id="366" action="8"/>
+		<item id="367" action="8"/>
+		<item id="385" action="8"/>
+		<item id="386" action="8"/>
+		<item id="387" action="8"/>
+		<item id="388" action="8"/>
+		<item id="389" action="8"/>
+		<item id="390" action="8"/>
+		<item id="391" action="8"/>
+		<item id="392" action="8"/>
+		<item id="393" action="8"/>
+		<item id="394" action="8"/>
+		<item id="395" action="8"/>
+		<item id="396" action="8"/>
+		<item id="397" action="8"/>
+		<item id="677" action="8"/>
+		<item id="678" action="8"/>
+	</npc>
+	<npc name="蒋师傅" id="218">
+		<menu>function MainDialog()
+AddTalk("哎，首饰这东西真是太诱惑人的。不但夺目，而且又能增加你们的攻击力、防御力，真的一物多用啊。所以，首饰是宝啊，值得大家拥有它，珍藏它。不管打造、升级还是修理或是合成，我都能派上用场。那你究竟想要什么呢？")
+AddTradeRepairItem("修理物品","","","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","要修理吧？")
+AddMakeItem("打造首饰","id[295,296,297,298,299,300,301,302,303,304,305,306,307,308,325,326,327,328,329,330,331,332,333,334,335,336,337,415,416,417,418,419,420,421,422,423,424,425,426,445,446,447,448,449,450,451,452,453,454,455,456,475,476,477,478,479,480,481,482,483,484,485,486,505,506,507,508,509,510,511,512,513,514,515,516,517]"," 打造什么呢？给自己添点中意的首饰吧！")
+AddUpItem("升级物品"," type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","不想让自己的物品有点变化吗？那就升级吧！")                                                     
+AddChangeItem("合成物品"," id[677,678]","要合成些什么吗？")
+AddDialogItem("关于修理","Dialog1")
+AddDialogItem("关于打造","Dialog2")                                         
+AddDialogItem("关于升级和合成","Dialog3")                                        
+AddCloseItem("离开")
+end
+
+function Dialog1()
+AddTalk("关于修理: 玩家可以把一切道具放在任一锻造功能的NPC和道具买卖功能的NPC上进行修理。修理包括“全部修理”与“个别修理”和“自行修理”；\nA．全部修理：修理人物当前装备的全部道具（不包含包裹中的）；\nB．个别修理：修理人物指定的（包括包裹与身上的），当鼠标移动到该按钮上时显示该按钮为“个别修理”，鼠标左键单击该按钮，光标变成“小锤子”，当“小锤子”移动到要修理的物品上的时候，“显示修理费用”，左键再次点击 修理完毕，玩家包裹内显示的 “金币”数 即时相应减少，装备最大耐久值不下降。\nC．自行修理：具体操作同“个别修理”。")
+AddDialogItem("离开","MainDialog")
+end
+
+function Dialog2()                                                               
+AddTalk("关于打造: 打造物品 有低级和高级之分，比如在低级打造处不能打造高级物品。在每个打造场景内，按打造道具的类型分有：武器类、防具类（服装、头盔、盾牌）、首饰类（项链、戒指、护腕）、腰带、鞋子类。玩家要打造什么东西，就去相应的NPC处。在满足一定条件情况下， NPC从玩家那里扣除相应的原料，然后把生成的道具放在玩家道具栏内。")
+AddDialogItem("离开","MainDialog")
+end                                                                                                                                                                       
+
+function Dialog3()
+AddTalk("关于升级和合成: 玩家与升级NPC对话，放上必须得物品与材料，再确定升级后或者合成后，NPC当然会扣除一定的金钱，当然升级有概率问题，级升得越高，失败的机率越大。而合成却是100%成功。带上需要升级的物品以及必备的材料及足够的金钱，物品一共可以升级6次；/n1）升级：用鼠标左键点住需要升级的物品不放，然后拖放到升级界面的道具框内，每次只能放一类升级的物品，然后在材料框内放上升级需要的材料。而升级需要的原料来自于怪物掉落：墨玉飞蝗、魔夜珠、魔月珠、魔血玉、混魔石、魔灵石、圣灵珠；\n2）合成：鼠标左键点住合成的物品放入合成界面的道具栏内，每次只能放一种合成的物品才能正常合成。5个相同的次一级的材料合成一个比自己高一等级的材料，例如5个墨玉飞蝗合成一个魔夜珠，依次类推。 ")
+AddDialogItem("离开","MainDialog")
+end
+                                                                             
+AddDialog("MainDialog")                                                                
+</menu>
+		<item kind="1" action="20"/>
+		<item kind="2" action="20"/>
+		<item kind="3" action="20"/>
+		<item kind="4" action="20"/>
+		<item kind="5" action="20"/>
+		<item kind="6" action="20"/>
+		<item kind="7" action="20"/>
+		<item kind="8" action="20"/>
+		<item kind="9" action="20"/>
+		<item kind="10" action="20"/>
+		<item kind="11" action="20"/>
+		<item kind="12" action="20"/>
+		<item id="" kind="13" action="20"/>
+		<item id="" kind="14" action="20"/>
+		<item kind="15" action="20"/>
+		<item id="295" action="8"/>
+		<item id="296" action="8"/>
+		<item id="297" action="8"/>
+		<item id="298" action="8"/>
+		<item id="299" action="8"/>
+		<item id="300" action="8"/>
+		<item id="301" action="8"/>
+		<item id="302" action="8"/>
+		<item id="303" action="8"/>
+		<item id="304" action="8"/>
+		<item id="305" action="8"/>
+		<item id="306" action="8"/>
+		<item id="307" action="8"/>
+		<item id="308" action="8"/>
+		<item id="325" action="8"/>
+		<item id="326" action="8"/>
+		<item id="327" action="8"/>
+		<item id="328" action="8"/>
+		<item id="329" action="8"/>
+		<item id="330" action="8"/>
+		<item id="331" action="8"/>
+		<item id="332" action="8"/>
+		<item id="333" action="8"/>
+		<item id="334" action="8"/>
+		<item id="335" action="8"/>
+		<item id="336" action="8"/>
+		<item id="337" action="8"/>
+		<item id="415" action="8"/>
+		<item id="416" action="8"/>
+		<item id="417" action="8"/>
+		<item id="418" action="8"/>
+		<item id="419" action="8"/>
+		<item id="420" action="8"/>
+		<item id="421" action="8"/>
+		<item id="422" action="8"/>
+		<item id="423" action="8"/>
+		<item id="424" action="8"/>
+		<item id="425" action="8"/>
+		<item id="426" action="8"/>
+		<item id="445" action="8"/>
+		<item id="446" action="8"/>
+		<item id="447" action="8"/>
+		<item id="448" action="8"/>
+		<item id="449" action="8"/>
+		<item id="450" action="8"/>
+		<item id="451" action="8"/>
+		<item id="452" action="8"/>
+		<item id="453" action="8"/>
+		<item id="454" action="8"/>
+		<item id="455" action="8"/>
+		<item id="456" action="8"/>
+		<item id="475" action="8"/>
+		<item id="476" action="8"/>
+		<item id="477" action="8"/>
+		<item id="478" action="8"/>
+		<item id="479" action="8"/>
+		<item id="480" action="8"/>
+		<item id="481" action="8"/>
+		<item id="482" action="8"/>
+		<item id="483" action="8"/>
+		<item id="484" action="8"/>
+		<item id="485" action="8"/>
+		<item id="486" action="8"/>
+		<item id="505" action="8"/>
+		<item id="506" action="8"/>
+		<item id="507" action="8"/>
+		<item id="508" action="8"/>
+		<item id="509" action="8"/>
+		<item id="510" action="8"/>
+		<item id="511" action="8"/>
+		<item id="512" action="8"/>
+		<item id="513" action="8"/>
+		<item id="514" action="8"/>
+		<item id="515" action="8"/>
+		<item id="516" action="8"/>
+		<item id="517" action="8"/>
+		<item id="677" action="8"/>
+		<item id="678" action="8"/>
+	</npc>
+	<npc name="秦老汉" id="252">
+		<menu>function MainDialog()
+AddTalk("你好啊，我是炼药师。别看我一把年纪的，我可是精通药理的。想要学炼药术吗？那么请带足草药吧。自己学会了炼药就可以帮助自己恢复生命值和魔法值。")
+AddMakeItem("炼制药品","id[582,583,584,589,590,591,592,593,594,595,598,599,600]"," 炼制什么药品呢？多多益善，行走江湖的，用来防身啊！")                 AddCloseItem("离开")
+end
+                                                                            function Dialog1()
+AddTalk("关于炼制: XXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+
+AddDialog("MainDialog")</menu>
+		<item id="582" kind="" action="8"/>
+		<item id="583" kind="" action="8"/>
+		<item id="584" kind="" action="8"/>
+		<item id="589" action="8"/>
+		<item id="590" action="8"/>
+		<item id="591" action="8"/>
+		<item id="592" action="8"/>
+		<item id="593" action="8"/>
+		<item id="594" action="8"/>
+		<item id="595" action="8"/>
+		<item id="598" action="8"/>
+		<item id="599" action="8"/>
+		<item id="600" action="8"/>
+	</npc>
+	<npc name="洪老汉" id="254">
+		<menu>function MainDialog()
+AddTalk("你好啊，我是炼药师。别看我一把年纪的，我可是精通药理的。想要学炼药术吗？那么请带足草药吧。自己学会了炼药就可以帮助自己恢复生命值和魔法值。")
+AddMakeItem("炼制药品","id[580,581,587,588,592,594,596,597]"," 炼制什么药品呢？多多益善，行走江湖的，用来防身啊！")                                         AddCloseItem("离开")
+end
+                                                                           function Dialog1()
+AddTalk("关于炼制: XXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+
+AddDialog("MainDialog")</menu>
+		<item id="580" kind="" action="8"/>
+		<item id="581" kind="" action="8"/>
+		<item id="587" kind="" action="8"/>
+		<item id="588" action="8"/>
+		<item id="592" action="8"/>
+		<item id="594" action="8"/>
+		<item id="596" action="8"/>
+		<item id="597" action="8"/>
+	</npc>
+	<npc name="骆嫂" id="198">
+		<menu>function MainDialog()
+AddTalk("你好你好，欢迎啊。我是这个劳动用具店的老板，大家都叫我骆嫂。")
+AddTradeItem("买卖劳动用具","id[656,657,658,659,669,670];type[20]","type[20,23,25,26]","这劳动用具很实用，赶紧咯。同样你可以把你身上的劳动用具卖给我。" AddDialogItem("关于劳动用具的使用","Dialog1")                               AddCloseItem("离开")
+end
+
+function Dialog1()
+AddTalk("关于劳动用具的使用:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+                                                                         AddDialog("MainDialog")
+</menu>
+		<item id="656" kind="" action="1"/>
+		<item id="657" kind="" action="1"/>
+		<item id="658" kind="" action="1"/>
+		<item id="659" action="1"/>
+		<item id="669" action="1"/>
+		<item id="670" action="1"/>
+		<item id="" kind="20" action="2"/>
+		<item id="" kind="23" action="2"/>
+		<item id="" kind="25" action="2"/>
+		<item id="" kind="26" action="2"/>
+	</npc>
+	<npc name="德嫂" id="201">
+		<menu>function MainDialog()
+AddTalk("你好啊，我是专门出售劳动用具的。大伙叫我德嫂。")
+AddTradeItem("买卖劳动用具","id[653，654,666,667,668];type[20]","type[20,23,25,26]","劳动最光荣了。买点劳动用品吧，去参与一些劳作，这会让你光荣无限的。AddDialogItem("关于劳动用具的使用","Dialog1")                             AddCloseItem("离开")
+end
+
+function Dialog1()
+AddTalk("关于劳动用具的使用:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+AddDialogItem("离开","MainDialog")
+end
+                                                                          AddDialog("MainDialog")
+</menu>
+		<item id="653" kind="" action="1"/>
+		<item id="654" kind="" action="1"/>
+		<item id="666" kind="" action="1"/>
+		<item id="667" kind="" action="1"/>
+		<item id="668" kind="" action="1"/>
+		<item kind="20" action="2"/>
+		<item kind="23" action="2"/>
+		<item kind="25" action="2"/>
+		<item kind="26" action="2"/>
+	</npc>
+	<npc name="流浪小贩" id="285">
+		<menu>function MainDialog()
+AddTalk("好啊，很高兴你能够光临，我在这岛上都半辈子了，一直和我的简陋的手推车相依为命，我真苦命哦。你就可怜可怜我吧，在我这里买点药，毕竟这岛屿很危险的，有药也防防身嘛。当然你也可以把你的物品卖给我，让我赚点钱呢。你的道具是不是也该修理一下了呢？在这个荒芜的地方,只有我能修理。")
+AddTradeRepairItem("买卖/修理物品","id[578,579,585,586,];type[17]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,25,26,27,28]","type[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]","买点什么药啊，或是卖点东西给我啊！想修理什么呢？")               AddCloseItem("离开")
+end
+                                                                          AddDialog("MainDialog")
+</menu>
+		<item id="578" kind="" action="1"/>
+		<item id="579" kind="" action="1"/>
+		<item id="585" kind="" action="1"/>
+		<item id="586" action="1"/>
+		<item id="" kind="1" action="6"/>
+		<item id="" kind="2" action="6"/>
+		<item id="" kind="3" action="6"/>
+		<item id="" kind="4" action="6"/>
+		<item id="" kind="5" action="6"/>
+		<item id="" kind="6" action="6"/>
+		<item id="" kind="7" action="6"/>
+		<item id="" kind="8" action="6"/>
+		<item id="" kind="9" action="6"/>
+		<item id="" kind="10" action="6"/>
+		<item id="" kind="11" action="6"/>
+		<item id="" kind="12" action="6"/>
+		<item id="" kind="13" action="6"/>
+		<item id="" kind="14" action="6"/>
+		<item id="" kind="15" action="6"/>
+		<item id="" kind="16" action="2"/>
+		<item id="" kind="17" action="2"/>
+		<item id="" kind="18" action="2"/>
+		<item id="" kind="19" action="2"/>
+		<item id="" kind="20" action="2"/>
+		<item id="" kind="21" action="2"/>
+		<item id="" kind="22" action="2"/>
+		<item id="" kind="23" action="2"/>
+		<item id="" kind="25" action="2"/>
+		<item id="" kind="26" action="2"/>
+		<item id="" kind="27" action="2"/>
+		<item id="" kind="28" action="2"/>
+	</npc>
+	<npc name="" id="">
+		<menu/>
+		<item id=""/>
+		<item id=""/>
+		<item id=""/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+	</npc>
+	<npc name="" id="">
+		<menu/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+	</npc>
+	<npc name="" id="">
+		<menu/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+	</npc>
+	<npc name="" id="">
+		<menu/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+	</npc>
+	<npc name="" id="">
+		<menu/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+	</npc>
+	<npc name="" id="">
+		<menu/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+	</npc>
+	<npc name="" id="">
+		<menu/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+	</npc>
+	<npc name="" id="">
+		<menu/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+	</npc>
+	<npc name="" id="">
+		<menu/>
+		<item/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+	</npc>
+	<npc name="" id="">
+		<menu/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+	</npc>
+	<npc name="" id="">
+		<menu/>
+		<item/>
+		<item/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+	</npc>
+	<npc name="" id="">
+		<menu/>
+		<item/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+	</npc>
+	<npc name="" id="">
+		<menu/>
+		<item/>
+		<item/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+	</npc>
+	<npc name="" id="">
+		<menu/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+	</npc>
+	<npc name="" id="">
+		<menu/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+	</npc>
+	<npc name="" id="">
+		<menu/>
+		<item/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+	</npc>
+	<npc name="" id="">
+		<menu/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+	</npc>
+	<npc name="" id="">
+		<menu/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+	</npc>
+	<npc name="" id="">
+		<menu/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+	</npc>
+	<npc name="" id="">
+		<menu/>
+		<item/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+	</npc>
+	<npc name="" id="">
+		<menu/>
+		<item/>
+		<item/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item id="" kind="" action=""/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+	</npc>
+</NpcTrade>

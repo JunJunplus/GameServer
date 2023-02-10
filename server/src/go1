@@ -1,0 +1,7 @@
+#!/bin/bash
+rm -rf *.*
+rm -rf ScenesServer/*.*
+rm -rf SessionServer/*.*
+rm -rf GatewayServer/*.*
+rm -rf FLServer/*.*
+rm -rf sql/*.*

@@ -1,0 +1,78 @@
+060801-23:00:45 Zebra  INFO: 创建到服务器 192.168.18.220:8000 的连接成功
+060801-23:00:45 Zebra ERROR: versionCmd OK
+060801-23:00:45 Zebra  INFO: 创建到服务器 192.168.18.220:8000 的连接成功
+060801-23:00:46 Zebra ERROR: Login faile
+060801-23:49:44 Zebra TRACE: zSocket::setNonblock
+060801-23:49:44 Zebra  INFO: 创建到服务器 192.168.18.220:8000 的连接成功
+060801-23:49:44 Zebra TRACE: zSocket::sendCmd
+060801-23:49:44 Zebra TRACE: zSocket::sendRawDataIM
+060801-23:49:44 Zebra TRACE: zSocket::sendRawData
+060801-23:49:44 Zebra TRACE: zSocket::waitForWrite
+060801-23:49:44 Zebra ERROR: versionCmd OK
+060801-23:49:44 Zebra TRACE: zSocket::setNonblock
+060801-23:49:44 Zebra  INFO: 创建到服务器 192.168.18.220:8000 的连接成功
+060801-23:49:44 Zebra TRACE: zSocket::sendCmd
+060801-23:49:44 Zebra TRACE: zSocket::sendRawDataIM
+060801-23:49:44 Zebra TRACE: zSocket::sendRawData
+060801-23:49:44 Zebra TRACE: zSocket::waitForWrite
+060801-23:49:44 Zebra TRACE: zSocket::sendCmd
+060801-23:49:44 Zebra TRACE: zSocket::sendRawDataIM
+060801-23:49:44 Zebra TRACE: zSocket::sendRawData
+060801-23:49:44 Zebra TRACE: zSocket::recvToCmd
+060801-23:49:44 Zebra TRACE: zSocket::recvToBuf
+060801-23:49:44 Zebra TRACE: zSocket::waitForRead
+060801-23:49:44 Zebra ERROR: Login faile
+060801-23:57:07 Zebra TRACE: zSocket::setNonblock
+060801-23:57:07 Zebra  INFO: 创建到服务器 192.168.18.220:8000 的连接成功
+060801-23:57:07 Zebra TRACE: zSocket::sendCmd
+060801-23:57:07 Zebra TRACE: zSocket::sendRawDataIM
+060801-23:57:07 Zebra TRACE: zSocket::sendRawData
+060801-23:57:07 Zebra TRACE: zSocket::waitForWrite
+060801-23:57:07 Zebra ERROR: versionCmd OK
+060801-23:57:07 Zebra TRACE: zSocket::setNonblock
+060801-23:57:07 Zebra  INFO: 创建到服务器 192.168.18.220:8000 的连接成功
+060801-23:57:07 Zebra TRACE: zSocket::sendCmd
+060801-23:57:07 Zebra TRACE: zSocket::sendRawDataIM
+060801-23:57:07 Zebra TRACE: zSocket::sendRawData
+060801-23:57:07 Zebra TRACE: zSocket::waitForWrite
+060801-23:57:07 Zebra TRACE: zSocket::sendCmd
+060801-23:57:07 Zebra TRACE: zSocket::sendRawDataIM
+060801-23:57:07 Zebra TRACE: zSocket::sendRawData
+060801-23:57:07 Zebra TRACE: zSocket::recvToCmd
+060801-23:57:07 Zebra TRACE: zSocket::recvToBuf
+060801-23:57:07 Zebra TRACE: zSocket::waitForRead
+060801-23:57:07 Zebra TRACE: zSocket::recvToBuf
+060801-23:57:07 Zebra TRACE: zSocket::waitForRead
+060801-23:57:10 Zebra TRACE: zSocket::recvToBuf
+060801-23:57:10 Zebra TRACE: zSocket::waitForRead
+060801-23:57:12 Zebra TRACE: zSocket::recvToBuf
+060801-23:57:12 Zebra TRACE: zSocket::waitForRead
+060801-23:57:14 Zebra TRACE: zSocket::recvToBuf
+060801-23:57:14 Zebra TRACE: zSocket::waitForRead
+060801-23:57:16 Zebra TRACE: zSocket::recvToBuf
+060801-23:57:16 Zebra TRACE: zSocket::waitForRead
+060801-23:57:18 Zebra TRACE: zSocket::recvToBuf
+060801-23:57:18 Zebra TRACE: zSocket::waitForRead
+060801-23:57:20 Zebra TRACE: zSocket::recvToBuf
+060801-23:57:20 Zebra TRACE: zSocket::waitForRead
+060801-23:57:22 Zebra TRACE: zSocket::recvToBuf
+060801-23:57:22 Zebra TRACE: zSocket::waitForRead
+060801-23:57:24 Zebra TRACE: zSocket::recvToBuf
+060801-23:57:24 Zebra TRACE: zSocket::waitForRead
+060801-23:57:26 Zebra TRACE: zSocket::recvToBuf
+060801-23:57:26 Zebra TRACE: zSocket::waitForRead
+060801-23:57:29 Zebra TRACE: zSocket::recvToBuf
+060801-23:57:29 Zebra TRACE: zSocket::waitForRead
+060801-23:57:31 Zebra TRACE: zSocket::recvToBuf
+060801-23:57:31 Zebra TRACE: zSocket::waitForRead
+060801-23:57:33 Zebra TRACE: zSocket::recvToBuf
+060801-23:57:33 Zebra TRACE: zSocket::waitForRead
+060801-23:57:35 Zebra TRACE: zSocket::recvToBuf
+060801-23:57:35 Zebra TRACE: zSocket::waitForRead
+060801-23:57:37 Zebra TRACE: zSocket::recvToBuf
+060801-23:57:37 Zebra TRACE: zSocket::waitForRead
+060801-23:57:39 Zebra TRACE: zSocket::recvToBuf
+060801-23:57:39 Zebra TRACE: zSocket::waitForRead
+060801-23:57:41 Zebra TRACE: zSocket::recvToBuf
+060801-23:57:41 Zebra TRACE: zSocket::waitForRead
+060801-23:57:42 Zebra ERROR: Login faile

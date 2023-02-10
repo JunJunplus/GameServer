@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GB2312"?>
+<CharInfo>
+	<!-- 这里定义了新创建角色需要分配的物品，profession表示职业，id表示物品编号，name表示物品名称，number表示物品数量 -->
+	<!-- localeID表示物品存放在那个地方，0表示普通装备栏，1表示直接装备在身上 -->
+	<object id="1" name="布衣" localeID="1" number="1" profession="1"/>
+	<object id="165" name="开山斧" localeID="0" number="1" profession="1"/>
+</CharInfo>
